@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会议详情</title>
+    <!-- 引入Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- 引入腾讯地图API -->
+    <script src="https://map.qq.com/api/js?v=2.exp&key=JJABZ-AQSYA-TFLKT-CRX4B-HDACE-MUBLS"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#165DFF',
+                        secondary: '#36D399',
+                        accent: '#8B5CF6',
+                        dark: '#1E293B',
+                        light: '#F8FAFC'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            }
+            .bg-gradient-primary {
+                background: linear-gradient(135deg, #165DFF 0%, #3B82F6 100%);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+    <!-- 顶部导航 -->
+    <header class="bg-white shadow-md fixed w-full z-50 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fa fa-calendar-check-o text-primary text-2xl"></i>
+                <h1 class="text-xl md:text-2xl font-bold text-dark">会议通知</h1>
+            </div>
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="#home" class="text-gray-700 hover:text-primary transition-colors duration-200 font-medium">首页</a>
+                <a href="#details" class="text-gray-700 hover:text-primary transition-colors duration-200 font-medium">会议详情</a>
+                <a href="#location" class="text-gray-700 hover:text-primary transition-colors duration-200 font-medium">会议地点</a>
+            </nav>
+            <button class="md:hidden text-gray-700 focus:outline-none" id="menu-toggle">
+                <i class="fa fa-bars text-xl"></i>
+            </button>
+        </div>
+        <!-- 移动端菜单 -->
+        <div class="md:hidden hidden bg-white shadow-lg absolute w-full" id="mobile-menu">
+            <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
+                <a href="#home" class="text-gray-700 hover:text-primary py-2 transition-colors duration-200 font-medium">首页</a>
+                <a href="#details" class="text-gray-700 hover:text-primary py-2 transition-colors duration-200 font-medium">会议详情</a>
+                <a href="#location" class="text-gray-700 hover:text-primary py-2 transition-colors duration-200 font-medium">会议地点</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主横幅区域 -->
+    <section id="home" class="min-h-screen pt-24 md:pt-32 pb-16 md:pb-24 bg-gradient-primary text-white flex items-center justify-center">
+  <div class="container mx-auto px-4 w-full">
+    <div class="flex flex-col items-center text-center md:text-center gap-10">
+
+      <!-- 主要内容 -->
+      <!-- 718 -->
+      <div class="w-full max-w-3xl">
+        <h2 class="text-[clamp(1rem,2vw,2rem)] font-bold leading-tight text-shadow mb-6">
+          黑龙江省医学会卒中专业委员会换届会议<br>
+          神经系统疾病质控中心神经内科亚专业质控专家组成立大会
+        </h2>
+        
+        <p class="text-lg md:text-xl opacity-90 mb-8">
+          黑龙江 哈尔滨 2025年7月18日
+        </p>
+        
+        <p class="text-lg md:text-xl opacity-90 mb-8">
+          主办单位: 黑龙江省医学会 &nbsp;&nbsp; 黑龙江省医疗质量控制中心<br>
+          承办单位：哈尔滨医科大学附属第一医院<br>
+          会议地点：哈尔滨富力万达嘉华酒店
+        </p>
+
+
+        <div class="flex flex-wrap justify-center gap-4 mb-8">
+          <a href="#details" class="bg-white text-primary px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            查看详情
+          </a>
+        </div>
+        
+        <!-- 719~720 -->
+        <h2 class="text-[clamp(1rem,2vw,2rem)] font-bold leading-tight text-shadow mb-6">
+          2025年龙江卒中大会暨黑龙江省医学会卒中专业委员会<br>
+          黑龙江省医师协会脑小血管病专业委员会学术会议
+        </h2>
+        
+        <p class="text-lg md:text-xl opacity-90 mb-8">
+          黑龙江 哈尔滨 2025年7月19日~7月20日
+        </p>
+        
+        <p class="text-lg md:text-xl opacity-90 mb-8">
+          主办单位: 黑龙江省医学会 &nbsp;&nbsp; 黑龙江省医师协会<br>
+          承办单位：哈尔滨医科大学附属第一医院<br>
+          会议地点：哈尔滨富力万达嘉华酒店
+        </p>
+
+
+        <div class="flex flex-wrap justify-center gap-4 mb-8">
+          <a href="#details" class="bg-white text-primary px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            查看详情
+          </a>
+        </div>
+        
+        <!-- 倒计时模块 -->
+        <div class="w-full max-w-md mx-auto bg-white/10 backdrop-blur-md rounded-xl p-6 card-hover">
+          <h3 class="text-xl font-bold mb-4 text-center">距离会议开始还有</h3>
+          <div class="grid grid-cols-4 gap-3" id="countdown">
+            <div class="bg-white/20 rounded-lg p-4 text-center">
+              <div class="text-3xl font-bold" id="days">00</div>
+              <div class="text-sm">天</div>
+            </div>
+            <div class="bg-white/20 rounded-lg p-4 text-center">
+              <div class="text-3xl font-bold" id="hours">00</div>
+              <div class="text-sm">时</div>
+            </div>
+            <div class="bg-white/20 rounded-lg p-4 text-center">
+              <div class="text-3xl font-bold" id="minutes">00</div>
+              <div class="text-sm">分</div>
+            </div>
+            <div class="bg-white/20 rounded-lg p-4 text-center">
+              <div class="text-3xl font-bold" id="seconds">00</div>
+              <div class="text-sm">秒</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- 会议详情区域 -->
+    <section id="details" class="py-16 bg-white">
+    <div class="container mx-auto px-4 max-w-[70%]">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">会议详情</h2>
+            <div class="w-20 h-1 bg-primary mx-auto rounded-full"></div>
+        </div>
+
+        <div class="space-y-8 mb-8">
+            <div class="bg-gray-50 rounded-xl p-6 shadow-md card-hover flex items-center">
+                <div class="bg-primary/10 p-3 rounded-full mr-5">
+                    <i class="fa fa-calendar-check-o text-primary text-2xl"></i>
+                </div>
+                <div class="flex-grow">
+                    <a href="#agenda-718" class="hover:text-primary transition-colors duration-200">
+                    <h3 class="text-xl font-bold text-dark">2025年07月18日</h3>
+                    <p class="text-gray-600 text-lg">13:30 — 16:00（线下） <span class="mx-2">|</span> 哈尔滨富力万达嘉华酒店三楼哈尔滨厅</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-xl p-6 shadow-md card-hover flex items-center">
+                <div class="bg-primary/10 p-3 rounded-full mr-5">
+                    <i class="fa fa-calendar-check-o text-primary text-2xl"></i>
+                </div>
+                <div class="flex-grow">
+                    <a href="#agenda-719" class="hover:text-primary transition-colors duration-200">
+                    <h3 class="text-xl font-bold text-dark">2025年07月19日</h3>
+                    <p class="text-gray-600 text-lg"> 08:00—16:30（线下） <span class="mx-2">|</span> 哈尔滨富力万达嘉华酒店三楼大会议厅</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-xl p-6 shadow-md card-hover flex items-center">
+                <div class="bg-primary/10 p-3 rounded-full mr-5">
+                    <i class="fa fa-calendar-check-o text-primary text-2xl"></i>
+                </div>
+                <div class="flex-grow">
+                    <a href="#agenda-720" class="hover:text-primary transition-colors duration-200">
+                    <h3 class="text-xl font-bold text-dark">2025年07月20日</h3>
+                    <p class="text-gray-600 text-lg">08:00—16:30（线上） <span class="mx-2">|</span> 腾讯会议平台</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+<!-- 第一张议程图 -->
+<div id="agenda-718" class="bg-gray-50 rounded-xl p-6 shadow-md card-hover mb-8">
+  <img src="./images/718.png" alt="会议议程第1页" class="w-full rounded-lg">
+</div>
+
+<!-- 第二张议程图 -->
+<div id="agenda-719" class="bg-gray-50 rounded-xl p-6 shadow-md card-hover mb-8">
+  <img src="./images/719.png" alt="会议议程第2页" class="w-full rounded-lg">
+</div>
+
+<!-- 第三张议程图 -->
+<div id="agenda-720" class="bg-gray-50 rounded-xl p-6 shadow-md card-hover mb-8">
+  <img src="./images/720.png" alt="会议议程第3页" class="w-full rounded-lg">
+</div>
+
+
+        </div>
+</section>
+
+    <!-- 会议地点区域 -->
+    <section id="location" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">会议地点</h2>
+                <div class="w-20 h-1 bg-primary mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="bg-white rounded-xl p-8 shadow-md card-hover">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-primary/10 p-3 rounded-full mr-4">
+                            <i class="fa fa-map-marker text-primary text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-dark">详细地址</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fa fa-building text-primary mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold">酒店名称</h4>
+                                <p class="text-gray-600">哈尔滨富力万达嘉华酒店</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fa fa-map-pin text-primary mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold">具体地址</h4>
+                                <p class="text-gray-600">黑龙江省哈尔滨市南岗区中兴大道158号</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fa fa-car text-primary mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-semibold">交通指引</h4>
+                                <p class="text-gray-600">地铁3号线哈西大街B出口，步行11分钟；自驾可停地下停车场</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="mt-8">
+                        <a href="https://j.map.baidu.com/fc/MVAk" target="_blank" class="inline-flex items-center text-primary hover:text-primary/80 font-medium">
+                            <i class="fa fa-external-link mr-2"></i>
+                            在百度地图中查看
+                        </a>
+                    </div>
+                </div>
+                
+            <div class="bg-white rounded-xl overflow-hidden shadow-md h-[400px] relative card-hover">
+                    <!-- 腾讯地图容器 -->
+                    <div id="map-container" class="w-full h-full"></div>
+            </div>
+            
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 页脚区域 -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fa fa-calendar-check-o text-primary text-2xl"></i>
+                        <h3 class="text-xl font-bold">会议通知</h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        本网站用于发布公司内部重要会议通知，请相关人员及时查看并做好准备。
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors">
+                            <i class="fa fa-weixin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors">
+                            <i class="fa fa-qq text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors">
+                            <i class="fa fa-envelope text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">快速链接</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-primary transition-colors">首页</a></li>
+                        <li><a href="#details" class="text-gray-400 hover:text-primary transition-colors">会议详情</a></li>
+                        <li><a href="#location" class="text-gray-400 hover:text-primary transition-colors">会议地点</a></li>
+                        <li><a href="#reminder" class="text-gray-400 hover:text-primary transition-colors">设置提醒</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">联系我们</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fa fa-map-marker text-primary mt-1 mr-3"></i>
+                            <span class="text-gray-400">北京市朝阳区科技园A座15层</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-phone text-primary mt-1 mr-3"></i>
+                            <span class="text-gray-400">010-12345678</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-envelope text-primary mt-1 mr-3"></i>
+                            <span class="text-gray-400">meeting@example.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 创新科技有限公司. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部按钮 -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-primary/90">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // 腾讯地图初始化
+        function initMap() {
+            // 创建地图实例
+            const map = new qq.maps.Map(document.getElementById('map-container'), {
+                center: new qq.maps.LatLng(45.701053, 126.594309), // 会议地点经纬度
+                zoom: 16 // 地图缩放级别
+            });
+            
+            // 添加标记
+            const marker = new qq.maps.Marker({
+                position: new qq.maps.LatLng(45.701053, 126.594309),
+                map: map
+            });
+            
+            // 添加信息窗口
+            const infoWindow = new qq.maps.InfoWindow({
+                content: '<div style="font-size:14px;padding:5px;">哈尔滨富力万达嘉华酒店</div>'
+            });
+            
+            // 点击标记显示信息窗口
+            qq.maps.event.addListener(marker, 'click', function() {
+                infoWindow.open(map, marker);
+            });
+            
+            // 自动显示信息窗口
+            infoWindow.open(map, marker);
+        }
+        
+        // 页面加载完成后初始化地图
+        window.addEventListener('load', initMap);
+        
+        // 设置会议日期（根据需求修改）
+        const meetingDate = new Date('2025-07-18T08:00:00').getTime();
+        
+        // 倒计时功能
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = meetingDate - now;
+            
+            // 时间计算
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            // 更新DOM
+            document.getElementById('days').innerText = days.toString().padStart(2, '0');
+            document.getElementById('hours').innerText = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').innerText = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').innerText = seconds.toString().padStart(2, '0');
+            
+            // 如果会议已过，显示提示
+            if (distance < 0) {
+                clearInterval(countdownTimer);
+                document.getElementById('countdown').innerHTML = '<div class="col-span-4 text-center text-xl font-bold">会议已结束</div>';
+            }
+        }
+        
+        // 初始更新倒计时
+        updateCountdown();
+        // 每秒更新一次
+        const countdownTimer = setInterval(updateCountdown, 1000);
+        
+        // 移动端菜单切换
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // 导航栏滚动效果
+        const navbar = document.getElementById('navbar');
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('py-2', 'shadow-lg');
+                navbar.classList.remove('py-3', 'shadow-md');
+            } else {
+                navbar.classList.add('py-3', 'shadow-md');
+                navbar.classList.remove('py-2', 'shadow-lg');
+            }
+            
+            if (window.scrollY > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.add('opacity-0', 'invisible');
+                backToTopButton.classList.remove('opacity-100', 'visible');
+            }
+        });
+        
+        // 回到顶部功能
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                // 关闭移动菜单（如果打开）
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // 表单提交处理
+        const reminderForm = document.getElementById('reminder-form');
+        const successMessage = document.getElementById('success-message');
+        
+        reminderForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // 模拟表单提交
+            setTimeout(() => {
+                // 显示成功消息
+                successMessage.classList.remove('hidden');
+                // 滚动到成功消息
+                successMessage.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'center'
+                });
+                // 重置表单
+                reminderForm.reset();
+                // 重新选中默认选项
+                document.getElementById('email-reminder').checked = true;
+                document.getElementById('sms-reminder').checked = true;
+                document.getElementById('push-reminder').checked = true;
+                document.getElementById('reminder-time').value = '30';
+            }, 800);
+        });
+    </script>
+</body>
+</html>
+    
