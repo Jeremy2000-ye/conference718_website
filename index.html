@@ -8,8 +8,6 @@
     <meta property="og:title" content="2025年龙江卒中大会 - 黑龙江省医学会主办" />
     <!-- 网页描述 -->
     <meta property="og:description" content="会议时间：2025年7月18-20日，地点：哈尔滨富力万达嘉华酒店，欢迎参会。" />
-    <!-- 分享封面图 -->
-    <meta property="og:image" content="https://jeremy2000-ye.github.io/conference718_website/images/logo1.png" />
     <!-- 当前网页地址 -->
     <meta property="og:url" content="https://jeremy2000-ye.github.io/conference718_website/" />
     <!-- 页面类型 -->
@@ -66,189 +64,1338 @@
 </head>
 
 <body class="bg-gray-50 text-black font-sans">
-    <!-- 顶部导航 -->
-    <header class="bg-white shadow-md fixed w-full z-50 transition-all duration-300" id="navbar">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            
-            <!-- 左侧 Logo 图片 -->
-            <div class="flex items-center space-x-4">
-                <img src="./images/logo1.png" alt="会议Logo" class="h-10 w-auto" />
-            </div>
-            
-            <nav class="hidden md:flex items-center space-x-8 text-xl font-semibold">
-                <a href="#home" class="text-black hover:text-primary transition-colors duration-200 font-medium">首页</a>
-                <a href="#details" class="text-black hover:text-primary transition-colors duration-200 font-medium">会议详情</a>
-                <a href="#location" class="text-black hover:text-primary transition-colors duration-200 font-medium">会议地点</a>
-            </nav>
-            
-            <!-- 移动端菜单按钮 -->
-            <button class="md:hidden text-black focus:outline-none" id="menu-toggle">
-                <i class="fa fa-bars text-2xl"></i>
-            </button>
-        </div>
-        <!-- 移动端菜单 -->
-        <div class="md:hidden hidden bg-white shadow-lg absolute w-full" id="mobile-menu">
-            <div class="container mx-auto px-4 py-3 flex flex-col space-y-3 text-lg font-medium">
-                <a href="#home" class="text-black hover:text-primary py-2 transition-colors duration-200 font-medium">首页</a>
-                <a href="#details" class="text-black hover:text-primary py-2 transition-colors duration-200 font-medium">会议详情</a>
-                <a href="#location" class="text-black hover:text-primary py-2 transition-colors duration-200 font-medium">会议地点</a>
-            </div>
-        </div>
-    </header>
+    <!-- 底部导航栏 -->
+    <footer class="fixed bottom-0 left-0 w-full shadow-t z-50 border-t border-gray-200"
+            style="background-image: url('./images/background2.png'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+      <div class="w-full px-8 py-3 flex justify-around items-center text-center text-base md:text-lg font-semibold">
+    
+        <!-- 首页 -->
+        <a href="#home" class="flex flex-col items-center justify-center text-white hover:text-primary transition-colors duration-200">
+          <i class="fa fa-home text-xl mb-1 text-white"></i>
+          首页
+        </a>
+    
+        <!-- 会议详情 -->
+        <a href="#details" class="flex flex-col items-center justify-center text-white hover:text-primary transition-colors duration-200">
+          <i class="fa fa-calendar text-xl mb-1 text-white"></i>
+          会议详情
+        </a>
+    
+        <!-- 讲者简介 -->
+        <a href="#speaker" class="flex flex-col items-center justify-center text-white hover:text-primary transition-colors duration-200">
+          <i class="fa fa-user text-xl mb-1 text-white"></i>
+          讲者简介
+        </a>
+    
+        <!-- 会议地点 -->
+        <a href="#location" class="flex flex-col items-center justify-center text-white hover:text-primary transition-colors duration-200">
+          <i class="fa fa-map-marker text-xl mb-1 text-white"></i>
+          会议地点
+        </a>
+    
+      </div>
+    </footer>
+
+
 
     <!-- 主横幅区域 -->
     <section 
-    id="home" 
-    class="min-h-screen pt-24 md:pt-32 pb-16 md:pb-24 bg-cover bg-center bg-no-repeat text-white flex items-center justify-center"
-    style="background-image: url('./images/background1.png');"
-    >
+        id="home" 
+        class="min-h-screen pt-24 md:pt-32 pb-16 md:pb-24 bg-cover bg-center bg-no-repeat text-white flex items-center justify-center"
+        style="background-image: url('./images/background1.png');"
+        >
         <div class="container mx-auto px-4 w-full">
         <div class="flex flex-col items-center text-center md:text-center gap-10 text-yellow-100">
-
-      <!-- 主要内容 -->
-      <!-- 718 -->
-      <div class="w-full max-w-3xl">
-        <h2 class="text-[clamp(1rem,2vw,2rem)] font-bold leading-tight text-shadow mb-6">
-          黑龙江省医学会卒中专业委员会换届会议<br>
-          神经系统疾病质控中心神经内科亚专业质控专家组成立大会
-        </h2>
-        
-        <p class="text-lg md:text-xl opacity-90 mb-8">
-          黑龙江 哈尔滨 2025年7月18日
-        </p>
-        
-        <p class="text-lg md:text-xl opacity-90 mb-8">
-          主办单位: 黑龙江省医学会 &nbsp;&nbsp; 黑龙江省医疗质量控制中心<br>
-          承办单位：哈尔滨医科大学附属第一医院<br>
-          会议地点：哈尔滨富力万达嘉华酒店
-        </p>
-
-
-        <div class="flex flex-wrap justify-center gap-4 mb-8">
-          <a href="#details" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-            查看详情
-          </a>
-        </div>
-        
-        <!-- 719~720 -->
-        <h2 class="text-[clamp(1rem,2vw,2rem)] font-bold leading-tight text-shadow mb-6">
-          2025年龙江卒中大会暨黑龙江省医学会卒中专业委员会<br>
-          黑龙江省医师协会脑小血管病专业委员会学术会议
-        </h2>
-        
-        <p class="text-lg md:text-xl opacity-90 mb-8">
-          黑龙江 哈尔滨 2025年7月19日~7月20日
-        </p>
-        
-        <p class="text-lg md:text-xl opacity-90 mb-8">
-          主办单位: 黑龙江省医学会 &nbsp;&nbsp; 黑龙江省医师协会<br>
-          承办单位：哈尔滨医科大学附属第一医院<br>
-          会议地点：哈尔滨富力万达嘉华酒店
-        </p>
-
-
-        <div class="flex flex-wrap justify-center gap-4 mb-8">
-          <a href="#details" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-            查看详情
-          </a>
-        </div>
-        
-        <!-- 倒计时模块 -->
-        <div class="w-full max-w-md mx-auto bg-white/10 backdrop-blur-md rounded-xl p-6 card-hover">
-          <h3 class="text-xl font-bold mb-4 text-center">距离会议开始还有</h3>
-          <div class="grid grid-cols-4 gap-3" id="countdown">
-            <div class="bg-white/20 rounded-lg p-4 text-center">
-              <div class="text-3xl font-bold" id="days">00</div>
-              <div class="text-sm">天</div>
+    
+          <!-- 主要内容 -->
+          <!-- 718 -->
+          <div class="w-full max-w-3xl">
+              
+            <div class="flex items-center justify-center gap-3 mb-6 flex-wrap text-center">
+              <img src="./images/logo1.png" alt="logo" class="w-28 md:w-32 object-contain">
+              <h2 class="text-[clamp(1rem,2vw,2rem)] font-bold leading-tight text-shadow text-yellow-100">
+                黑龙江省医学会卒中专业委员会换届会议<br class="hidden md:block">
+                神经系统疾病质控中心神经内科亚专业质控专家组成立大会
+              </h2>
             </div>
-            <div class="bg-white/20 rounded-lg p-4 text-center">
-              <div class="text-3xl font-bold" id="hours">00</div>
-              <div class="text-sm">时</div>
+            
+            <p class="text-lg md:text-xl opacity-90 mb-8">
+              ---黑龙江 哈尔滨 2025年7月18日---
+            </p>
+            
+            <p class="text-lg md:text-xl opacity-90 mb-8">
+              主办单位: 黑龙江省医学会 &nbsp;&nbsp; 黑龙江省医疗质量控制中心<br>
+              承办单位：哈尔滨医科大学附属第一医院<br>
+              会议地点：哈尔滨富力万达嘉华酒店
+            </p>
+            
+            <!-- 719~720 -->
+            <div class="flex items-center justify-center gap-3 mb-6 flex-wrap text-center">
+              <img src="./images/logo2.png" alt="logo" class="w-44 md:w-48 object-contain">
+              <h2 class="text-[clamp(1rem,2vw,2rem)] font-bold leading-tight text-shadow text-yellow-100">
+                2025年龙江卒中大会暨黑龙江省医学会卒中专业委员会<br class="hidden md:block">
+                黑龙江省医师协会脑小血管病专业委员会学术会议
+              </h2>
             </div>
-            <div class="bg-white/20 rounded-lg p-4 text-center">
-              <div class="text-3xl font-bold" id="minutes">00</div>
-              <div class="text-sm">分</div>
-            </div>
-            <div class="bg-white/20 rounded-lg p-4 text-center">
-              <div class="text-3xl font-bold" id="seconds">00</div>
-              <div class="text-sm">秒</div>
+
+            
+            <p class="text-lg md:text-xl opacity-90 mb-8">
+              ---黑龙江 哈尔滨 2025年7月19日~7月20日---
+            </p>
+            
+            <p class="text-lg md:text-xl opacity-90 mb-8">
+              主办单位: 黑龙江省医学会 &nbsp;&nbsp; 黑龙江省医师协会<br>
+              承办单位：哈尔滨医科大学附属第一医院<br>
+              会议地点：哈尔滨富力万达嘉华酒店
+            </p>
+            
+            <!-- 倒计时模块 -->
+            <div class="w-full max-w-md mx-auto bg-white/10 backdrop-blur-md rounded-xl p-6 card-hover">
+              <h3 class="text-xl font-bold mb-4 text-center">距离会议开始还有</h3>
+              <div class="grid grid-cols-4 gap-3" id="countdown">
+                <div class="bg-white/20 rounded-lg p-4 text-center">
+                  <div class="text-3xl font-bold" id="days">00</div>
+                  <div class="text-sm">天</div>
+                </div>
+                <div class="bg-white/20 rounded-lg p-4 text-center">
+                  <div class="text-3xl font-bold" id="hours">00</div>
+                  <div class="text-sm">时</div>
+                </div>
+                <div class="bg-white/20 rounded-lg p-4 text-center">
+                  <div class="text-3xl font-bold" id="minutes">00</div>
+                  <div class="text-sm">分</div>
+                </div>
+                <div class="bg-white/20 rounded-lg p-4 text-center">
+                  <div class="text-3xl font-bold" id="seconds">00</div>
+                  <div class="text-sm">秒</div>
+                </div>
+              </div>
             </div>
           </div>
+    
         </div>
       </div>
-
-    </div>
-  </div>
-</section>
-
-
+    </section>
+    
     <!-- 会议详情区域 -->
-    <section id="details" class="py-16 bg-white">
-    <div class="container mx-auto px-4 max-w-[70%]">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-5xl font-bold text-dark mb-4">会议详情</h2>
-            <div class="w-20 h-1 bg-primary mx-auto rounded-full"></div>
+<section id="details" class="py-16 bg-white">
+  <div class="container mx-auto px-4 max-w-[80%]">
+    <!-- 标题 -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-5xl font-bold text-dark mb-4">会议详情</h2>
+      <div class="w-20 h-1 bg-primary mx-auto rounded-full"></div>
+    </div>
+
+    <!-- 按钮区域：并排三块 -->
+    <div class="flex flex-wrap gap-6 justify-between mb-8">
+      <!-- 718 -->
+      <div class="bg-gray-50 rounded-xl shadow-md overflow-hidden flex-1 min-w-[300px]">
+        <button onclick="togglePanel1('panel-718')" class="w-full p-6 flex items-center text-left focus:outline-none">
+          <div class="bg-primary/10 p-4 rounded-full mr-5">
+            <i class="fa fa-calendar-check-o text-primary text-4xl"></i>
+          </div>
+          <div class="flex-grow">
+            <h3 class="text-2xl font-bold text-black">2025年07月18日</h3>
+            <p class="text-black text-xl">13:30 — 16:00（线下） <span class="mx-2">|</span> 哈尔滨富力万达嘉华酒店三楼哈尔滨厅</p>
+          </div>
+          <i class="fa fa-chevron-down text-primary transition-transform duration-300"></i>
+        </button>
+      </div>
+
+      <!-- 719 -->
+      <div class="bg-gray-50 rounded-xl shadow-md overflow-hidden flex-1 min-w-[300px]">
+        <button onclick="togglePanel1('panel-719')" class="w-full p-6 flex items-center text-left focus:outline-none">
+          <div class="bg-primary/10 p-4 rounded-full mr-5">
+            <i class="fa fa-calendar-check-o text-primary text-4xl"></i>
+          </div>
+          <div class="flex-grow">
+            <h3 class="text-2xl font-bold text-black">2025年07月19日</h3>
+            <p class="text-black text-xl">08:00 — 16:30（线下） <span class="mx-2">|</span> 哈尔滨富力万达嘉华酒店三楼大会议厅</p>
+          </div>
+          <i class="fa fa-chevron-down text-primary transition-transform duration-300"></i>
+        </button>
+      </div>
+
+      <!-- 720 -->
+      <div class="bg-gray-50 rounded-xl shadow-md overflow-hidden flex-1 min-w-[300px]">
+        <button onclick="togglePanel1('panel-720')" class="w-full p-6 flex items-center text-left focus:outline-none">
+          <div class="bg-primary/10 p-4 rounded-full mr-5">
+            <i class="fa fa-calendar-check-o text-primary text-4xl"></i>
+          </div>
+          <div class="flex-grow">
+            <h3 class="text-2xl font-bold text-black">2025年07月20日</h3>
+            <p class="text-black text-xl">08:00-16:30（线上）<span class="mx-2">|</span> 腾讯会议平台</p>
+          </div>
+          <i class="fa fa-chevron-down text-primary transition-transform duration-300"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- 展开内容区域：独立一整块，全宽展示 -->
+
+    <!-- panel-718 -->
+    <div id="panel-718" class="collapsible-panel hidden bg-white shadow-md p-6 rounded-xl mb-6 w-full">
+      
+      <h4 class="text-xl font-bold mb-4">下午会场（三楼哈尔滨厅）</h4>
+          <!-- 表头 -->
+            <div class="grid grid-cols-[1fr_3fr_1fr_1fr] font-semibold text-primary border-b pb-2 border-gray-200">
+              <div>时间</div>
+              <div>题目</div>
+              <div>演讲者</div>
+              <div>主持人</div>
+            </div>
+            
+            <!-- 第1行议程 -->
+            <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+              <div>13:30 - 14:00</div>
+              <div>黑龙江省医学会卒中专业委员会换届会议</div>
+              <div><a href="#zzl" class="text-blue-600 hover:underline">张忠玲</a></div>
+              <div><a href="#yss" class="text-blue-600 hover:underline">杨珊珊</a></div>
+            </div>
+            
+            <!-- 第2行议程 -->
+            <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+              <div>14:00-14:30</div>
+              <div>神经系统疾病质控中心神经内科亚专业质控专家组成立大会</div>
+              <div><a href="#zzl" class="text-blue-600 hover:underline">张忠玲</a></div>
+              <div><a href="#yss" class="text-blue-600 hover:underline">杨珊珊</a></div>
+            </div>
+            
+            <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+              <div>15:00 - 17:00</div>
+              <div>急性缺血性卒中前沿诊疗策略专家咨询会</div>
+              <div>国内及省内卒中领域专家</div>
+              <div><a href="#zzl" class="text-blue-600 hover:underline">张忠玲</a></div>
+            </div>
+      
+    </div>
+
+    <!-- panel-719 -->
+    <div id="panel-719" class="collapsible-panel hidden bg-white shadow-md p-6 rounded-xl mb-6 w-full">
+      <h4 class="text-xl font-bold mb-4">上午会场（三楼大会议厅）</h4>
+        
+          <!-- 表头 -->
+            <div class="grid grid-cols-[1fr_3fr_1fr_1fr] font-semibold text-primary border-b pb-2 border-gray-200">
+              <div>时间</div>
+              <div>题目</div>
+              <div>演讲者</div>
+              <div>主持人</div>
+            </div>
+            
+            <!-- 第1行议程 -->
+            <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+              <div>08:00 - 08:30</div>
+              <div>颈动脉慢性闭塞开通策略</div>
+              <div><a href="#lx" class="text-blue-600 hover:underline">骆翔</a></div>
+              <div></div>
+            </div>
+            
+            <!-- 第2行议程 -->
+            <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+              <div>08:30 - 09:00</div>
+              <div>2025年龙江卒中大会开幕式</div>
+              <div>张忠玲教授致欢迎辞、哈尔滨医科大学校领导致辞、黑龙江省医学会及医师协会领导致辞</div>
+              <div><a href="#yss" class="text-blue-600 hover:underline">杨珊珊</a></div>
+            </div>
+            
+          <h4 class="text-xl font-bold mb-4">下午分会场1（三楼大会议厅）</h4>
+          <!-- 表头 -->
+            <div class="grid grid-cols-[1fr_3fr_1fr_1fr] font-semibold text-primary border-b pb-2 border-gray-200">
+              <div>时间</div>
+              <div>题目</div>
+              <div>演讲者</div>
+              <div>主持人</div>
+            </div>
+            
+            <!-- 第1行议程 -->
+            <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+              <div>13:00 - 13:25</div>
+              <div></div>
+              <div><a href="#fyh" class="text-blue-600 hover:underline">范玉华</a></div>
+              <div></div>
+            </div>
+            
+            <!-- 第2行议程 -->
+            <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+              <div>13:25 - 13:50</div>
+              <div>ASCVD防治 ——目前的认知、困境与出路</div>
+              <div>史旭波</div>
+              <div>金玉玲</div>
+            </div>
+            
+            <h4 class="text-xl font-bold mb-4">下午分会场2（三楼大会议厅）</h4>
+          <!-- 表头 -->
+            <div class="grid grid-cols-[1fr_3fr_1fr_1fr] font-semibold text-primary border-b pb-2 border-gray-200">
+              <div>时间</div>
+              <div>题目</div>
+              <div>演讲者</div>
+              <div>主持人</div>
+            </div>
+            
+            <!-- 第1行议程 -->
+            <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+              <div>13:00-13:25</div>
+              <div>缺血性卒中的血栓形成及转归</div>
+              <div>黄立安</div>
+              <div></div>
+            </div>
+            
+            <!-- 第2行议程 -->
+            <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+              <div>13:25-13:50</div>
+              <div></div>
+              <div>米东华</div>
+              <div></div>
+            </div>
+            
+            <h4 class="text-xl font-bold mb-4">下午分会场3（三楼大会议厅）</h4>
+          <!-- 表头 -->
+            <div class="grid grid-cols-[1fr_3fr_1fr_1fr] font-semibold text-primary border-b pb-2 border-gray-200">
+              <div>时间</div>
+              <div>题目</div>
+              <div>演讲者</div>
+              <div>主持人</div>
+            </div>
+            
+            <!-- 第1行议程 -->
+            <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+              <div>13:00-13:25</div>
+              <div></div>
+              <div>吴波</div>
+              <div></div>
+            </div>
+            
+            <!-- 第2行议程 -->
+            <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+              <div>13:25-13:50</div>
+              <div></div>
+              <div>宋波</div>
+              <div></div>
+            </div>
+            
+            <h4 class="text-xl font-bold mb-4">下午分会场4（三楼吉林长白山厅）</h4>
+          <!-- 表头 -->
+            <div class="grid grid-cols-[1fr_3fr_1fr_1fr] font-semibold text-primary border-b pb-2 border-gray-200">
+              <div>时间</div>
+              <div>题目</div>
+              <div>演讲者</div>
+              <div>主持人</div>
+            </div>
+            
+            <!-- 第1行议程 -->
+            <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+              <div>13:00-13:25</div>
+              <div>脑健康社区队列的构建与研究意义</div>
+              <div>孙钦建</div>
+              <div></div>
+            </div>
+            
+            <!-- 第2行议程 -->
+            <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+              <div>13:25-13:50</div>
+              <div>口腔-肠道-脑轴：微生物组学在缺血性脑血管病中的作用</div>
+              <div>尹恝</div>
+              <div></div>
+            </div>
+    </div>
+
+    <!-- panel-720 -->
+    <div id="panel-720" class="collapsible-panel hidden bg-white shadow-md p-6 rounded-xl mb-6 w-full">
+      <h4 class="text-xl font-bold mb-4">上午会场（腾讯会议平台）</h4>
+        
+          <!-- 表头 -->
+            <div class="grid grid-cols-[1fr_3fr_1fr_1fr] font-semibold text-primary border-b pb-2 border-gray-200">
+              <div>时间</div>
+              <div>题目</div>
+              <div>演讲者</div>
+              <div>主持人</div>
+            </div>
+            
+            <!-- 第1行议程 -->
+            <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+              <div>08:00-08:30</div>
+              <div>2025年龙江卒中大会开幕式</div>
+              <div>张忠玲</div>
+              <div>杨珊珊</div>
+            </div>
+            
+            <!-- 第2行议程 -->
+            <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+              <div>08:30-09:00</div>
+              <div>双联抗血小板治疗的临床规范</div>
+              <div>曾进胜</div>
+              <div>肖兴军</div>
+            </div>
+            
+            <h4 class="text-xl font-bold mb-4">下午会场（腾讯会议平台）</h4>
+          <!-- 表头 -->
+            <div class="grid grid-cols-[1fr_3fr_1fr_1fr] font-semibold text-primary border-b pb-2 border-gray-200">
+              <div>时间</div>
+              <div>题目</div>
+              <div>演讲者</div>
+              <div>主持人</div>
+            </div>
+            
+            <!-- 第1行议程 -->
+            <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+              <div>12:00-13:30</div>
+              <div>再灌注治疗无效再通诊治</div>
+              <div>刘尊敬</div>
+              <div>姚丽芬</div>
+            </div>
+            
+            <!-- 第2行议程 -->
+            <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+              <div>13:30-14:00</div>
+              <div>血管内治疗颅内动脉硬化病变的这些年</div>
+              <div>李敬伟</div>
+              <div>姚丽芬</div>
+            </div>
         </div>
 
-        <div class="space-y-8 mb-8">
-            <div class="bg-gray-50 rounded-xl p-6 shadow-md card-hover flex items-center">
-                <div class="bg-primary/10 p-3 rounded-full mr-5">
-                    <i class="fa fa-calendar-check-o text-primary text-4xl"></i>
-                </div>
-                <div class="flex-grow">
-                    <a href="#agenda-718" class="hover:text-primary transition-colors duration-200">
-                    <h3 class="text-2xl font-bold text-black">2025年07月18日</h3>
-                    <p class="text-black text-xl">13:30 — 16:00（线下） <span class="mx-2">|</span> 哈尔滨富力万达嘉华酒店三楼哈尔滨厅</p>
-                    </a>
-                </div>
-            </div>
-
-            <div class="bg-gray-50 rounded-xl p-6 shadow-md card-hover flex items-center">
-                <div class="bg-primary/10 p-3 rounded-full mr-5">
-                    <i class="fa fa-calendar-check-o text-primary text-4xl"></i>
-                </div>
-                <div class="flex-grow">
-                    <a href="#agenda-719" class="hover:text-primary transition-colors duration-200">
-                    <h3 class="text-2xl font-bold text-black">2025年07月19日</h3>
-                    <p class="text-black text-xl"> 08:00—16:30（线下） <span class="mx-2">|</span> 哈尔滨富力万达嘉华酒店三楼大会议厅</p>
-                    </a>
-                </div>
-            </div>
-
-            <div class="bg-gray-50 rounded-xl p-6 shadow-md card-hover flex items-center">
-                <div class="bg-primary/10 p-3 rounded-full mr-5">
-                    <i class="fa fa-calendar-check-o text-primary text-4xl"></i>
-                </div>
-                <div class="flex-grow">
-                    <a href="#agenda-720" class="hover:text-primary transition-colors duration-200">
-                    <h3 class="text-xl font-bold text-black">2025年07月20日</h3>
-                    <p class="text-black text-xl">08:00—16:30（线上） <span class="mx-2">|</span> 腾讯会议平台</p>
-                    </a>
-                </div>
-            </div>
         </div>
+    </section>
+
+
             
-            <!-- 第一张议程图 -->
-            <div id="agenda-718" class="bg-gray-50 rounded-xl p-6 shadow-md card-hover mb-8">
-              <img src="./images/718_new1.png" alt="会议议程第1页" class="w-full rounded-lg">
+    <section id="speaker" class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-[80%]">
+          <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-2">讲者简介</h2>
+          <p class="text-gray-500 text-sm">按首字母排序</p>
+          <div class="w-20 h-1 bg-primary mx-auto mt-4 rounded-full"></div>
+        </div>
+    
+        <!-- 单个演讲者折叠块 -->
+        <div id="zzl" class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+          <!-- 姓名头像按钮 -->
+          <button 
+            class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+            onclick="togglePanel(this)">
+            
+            <div class="flex items-center space-x-4">
+              <img src="./images/head0.png" alt="张三头像" class="w-10 h-10 rounded-full object-cover">
+              <div>
+                <h3 class="text-xl font-bold text-dark">张忠玲</h3>
+                <p class="text-sm text-gray-500">哈尔滨医科大学附属第一医院</p>
+              </div>
             </div>
-            
-            <!-- 第二张议程图 -->
-            <div id="agenda-719" class="bg-gray-50 rounded-xl p-6 shadow-md card-hover mb-8">
-              <img src="./images/719_new1.png" alt="会议议程第2页" class="w-full rounded-lg">
-            </div>
-            
-            <!-- 第三张议程图 -->
-            <div id="agenda-720" class="bg-gray-50 rounded-xl p-6 shadow-md card-hover mb-8">
-              <img src="./images/720_new1.png" alt="会议议程第3页" class="w-full rounded-lg">
-            </div>
-            
-            
-                    </div>
+        
+            <i class="fa fa-chevron-down transition-transform duration-300"></i>
+          </button>
+        
+          <!-- 折叠内容 -->
+          <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+              这是简介
+          </div>
+        </div>
+
+    <div id="yss" class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">杨珊珊</h3>
+            <p class="text-sm text-gray-500">哈尔滨医科大学附属第一医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div id="lx" class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">骆翔</h3>
+            <p class="text-sm text-gray-500">华中科技大学同济医学院附属同济医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div id="fyh" class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">范玉华</h3>
+            <p class="text-sm text-gray-500">中山大学附属第一医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div id="sxb" class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">史旭波</h3>
+            <p class="text-sm text-gray-500">北京同仁医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div id="jyl" class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">金玉玲</h3>
+            <p class="text-sm text-gray-500">佳木斯大学附属第一医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div id="hla" class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">黄立安</h3>
+            <p class="text-sm text-gray-500">暨南大学附属第一医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div id="mdh" class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">米东华</h3>
+            <p class="text-sm text-gray-500">首都医科大学附属北京天坛医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div id="wb" class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">吴波</h3>
+            <p class="text-sm text-gray-500">四川大学华西医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div id="sb" class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">宋波</h3>
+            <p class="text-sm text-gray-500">郑州大学第一附属医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div id="sqj" class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">孙钦建</h3>
+            <p class="text-sm text-gray-500">山东省立医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div id="yj" class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">尹恝</h3>
+            <p class="text-sm text-gray-500">南方医科大学南方医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">讲者011</h3>
+            <p class="text-sm text-gray-500">附属医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">讲者012</h3>
+            <p class="text-sm text-gray-500">附属医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div id="zjs" class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">曾进胜</h3>
+            <p class="text-sm text-gray-500">中山大学附属第一医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">讲者014</h3>
+            <p class="text-sm text-gray-500">附属医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div id="xxj" class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">肖兴军</h3>
+            <p class="text-sm text-gray-500">哈尔滨医科大学附属第二医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div id="lzj" class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">刘尊敬</h3>
+            <p class="text-sm text-gray-500">北京大学人民医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div id="ljw" class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">李敬伟</h3>
+            <p class="text-sm text-gray-500">南京大学医学院附属苏州医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div id="ylf" class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">姚丽芬</h3>
+            <p class="text-sm text-gray-500">哈尔滨医科大学附属第一医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">讲者019</h3>
+            <p class="text-sm text-gray-500">附属医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">讲者020</h3>
+            <p class="text-sm text-gray-500">附属医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">讲者021</h3>
+            <p class="text-sm text-gray-500">附属医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">讲者022</h3>
+            <p class="text-sm text-gray-500">附属医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">讲者023</h3>
+            <p class="text-sm text-gray-500">附属医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">讲者024</h3>
+            <p class="text-sm text-gray-500">附属医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">讲者025</h3>
+            <p class="text-sm text-gray-500">附属医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">讲者026</h3>
+            <p class="text-sm text-gray-500">附属医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">讲者027</h3>
+            <p class="text-sm text-gray-500">附属医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">讲者028</h3>
+            <p class="text-sm text-gray-500">附属医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">讲者029</h3>
+            <p class="text-sm text-gray-500">附属医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">讲者030</h3>
+            <p class="text-sm text-gray-500">附属医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">讲者031</h3>
+            <p class="text-sm text-gray-500">附属医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">讲者032</h3>
+            <p class="text-sm text-gray-500">附属医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">讲者033</h3>
+            <p class="text-sm text-gray-500">附属医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">讲者034</h3>
+            <p class="text-sm text-gray-500">附属医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">讲者035</h3>
+            <p class="text-sm text-gray-500">附属医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">讲者036</h3>
+            <p class="text-sm text-gray-500">附属医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">讲者037</h3>
+            <p class="text-sm text-gray-500">附属医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">讲者038</h3>
+            <p class="text-sm text-gray-500">附属医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">讲者039</h3>
+            <p class="text-sm text-gray-500">附属医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">讲者040</h3>
+            <p class="text-sm text-gray-500">附属医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">讲者041</h3>
+            <p class="text-sm text-gray-500">附属医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">讲者042</h3>
+            <p class="text-sm text-gray-500">附属医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">讲者043</h3>
+            <p class="text-sm text-gray-500">附属医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">讲者044</h3>
+            <p class="text-sm text-gray-500">附属医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">讲者045</h3>
+            <p class="text-sm text-gray-500">附属医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">讲者046</h3>
+            <p class="text-sm text-gray-500">附属医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">讲者047</h3>
+            <p class="text-sm text-gray-500">附属医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">讲者048</h3>
+            <p class="text-sm text-gray-500">附属医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+    <div class="bg-gray-50 rounded-xl p-6 shadow-md mb-6">
+      <button 
+        class="w-full flex justify-between items-center px-4 py-4 text-left bg-gray-50 hover:bg-gray-50 font-semibold text-lg text-primary rounded-md"
+        onclick="togglePanel(this)">
+        <div class="flex items-center space-x-4">
+          <img src="./images/head0.png" alt="头像" class="w-10 h-10 rounded-full object-cover">
+          <div>
+            <h3 class="text-xl font-bold text-dark">讲者049</h3>
+            <p class="text-sm text-gray-500">附属医院</p>
+          </div>
+        </div>
+        <i class="fa fa-chevron-down transition-transform duration-300"></i>
+      </button>
+      <div class="hidden px-4 py-4 mt-2 bg-white text-gray-700 leading-relaxed rounded-md">
+        这是简介
+      </div>
+    </div>
+    
+              </div>
             </section>
 
+
     <!-- 会议地点区域 -->
-    <section id="location" class="py-16 bg-gray-50">
+    <section id="location" class="pt-16 pb-32 bg-gray-50">
         <div class="container mx-auto px-4">
             
             <div class="text-center mb-12">
@@ -305,63 +1452,6 @@
             </div>
         </div>
     </section>
-
-
-    <!-- 页脚区域 -->
-<footer
-  class="relative text-white py-12 bg-cover bg-center bg-no-repeat"
-  style="background-image: url('./images/background2.png');"
->
-  <!-- 半透明遮罩 -->
-  <div class="absolute inset-0 bg-black/10"></div>
-
-  <!-- 内容层 -->
-  <div class="relative z-10 container mx-auto px-4">
-    <div class="grid md:grid-cols-3 gap-8">
-      <div>
-        <div class="flex items-center space-x-2 mb-4">
-          <i class="fa fa-calendar-check-o text-primary text-2xl"></i>
-          <h3 class="text-xl font-bold">会议通知</h3>
-        </div>
-        <p class="text-white mb-4">本网站用于发布本次会议通知及详情</p>
-      </div>
-
-      <div>
-        <h4 class="text-lg font-semibold mb-4">快速链接</h4>
-        <ul class="space-y-2">
-          <li><a href="#home" class="text-white hover:text-primary transition-colors">首页</a></li>
-          <li><a href="#details" class="text-white hover:text-primary transition-colors">会议详情</a></li>
-          <li><a href="#location" class="text-white hover:text-primary transition-colors">会议地点</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4 class="text-lg font-semibold mb-4">联系我们</h4>
-        <ul class="space-y-2">
-          <li class="flex items-start">
-            <i class="fa fa-map-marker text-primary mt-1 mr-3"></i>
-            <span class="text-white">哈尔滨医科大学附属第一医院</span>
-          </li>
-          <li class="flex items-start">
-            <i class="fa fa-phone text-primary mt-1 mr-3"></i>
-            <span class="text-white">00000000000</span>
-          </li>
-          <li class="flex items-start">
-            <i class="fa fa-envelope text-primary mt-1 mr-3"></i>
-            <span class="text-white">0000000@00000.com</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer>
-
-
-
-    <!-- 回到顶部按钮 -->
-    <button id="back-to-top" class="fixed bottom-6 right-6 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-primary/90">
-        <i class="fa fa-arrow-up"></i>
-    </button>
 
     <script>
         // 腾讯地图初始化
@@ -511,6 +1601,25 @@
                 document.getElementById('reminder-time').value = '30';
             }, 800);
         });
+        //JavaScript 折叠逻辑
+        function togglePanel(button) {
+            const panel = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            panel.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180'); // 图标旋转
+        }
+        
+function togglePanel1(panelId) {
+  document.querySelectorAll('.collapsible-panel').forEach(panel => {
+    if (panel.id === panelId) {
+      panel.classList.toggle('hidden');
+    } else {
+      panel.classList.add('hidden');
+    }
+  });
+}
+</script>
+
     </script>
 </body>
 </html>
