@@ -187,27 +187,21 @@
     </div>
 
     <!-- 按钮区域：并排三块 -->
-    <div class="flex flex-wrap gap-6 justify-between mb-8">
+    <div class="flex justify-between gap-6 mb-8 w-full max-w-[1200px] mx-auto">
       <!-- 718 -->
-      <div class="bg-gray-50 rounded-xl shadow-md overflow-hidden flex-1 min-w-[300px]">
+      <div class="flex-1 min-w-0 max-w-[32%] bg-gray-50 rounded-xl shadow-md overflow-hidden">
         <button onclick="togglePanel1('panel-718')" class="w-full p-6 flex items-center text-left focus:outline-none">
-          <div class="bg-primary/10 p-4 rounded-full mr-5">
-            <i class="fa fa-calendar-check-o text-primary text-4xl"></i>
-          </div>
           <div class="flex-grow">
             <h3 class="text-2xl font-bold text-black">2025年07月18日</h3>
             <p class="text-black text-xl">13:30 — 16:00（线下） <span class="mx-2">|</span> 哈尔滨富力万达嘉华酒店三楼哈尔滨厅</p>
           </div>
-          <i class="fa fa-chevron-down text-primary transition-transform duration-300"></i>
+          <i class="fa fa-chevron-down text-primary transition-transform duration-300 rotate-icon"></i>
         </button>
       </div>
 
       <!-- 719 -->
-      <div class="bg-gray-50 rounded-xl shadow-md overflow-hidden flex-1 min-w-[300px]">
+      <div class="flex-1 min-w-0 max-w-[32%] bg-gray-50 rounded-xl shadow-md overflow-hidden">
         <button onclick="togglePanel1('panel-719')" class="w-full p-6 flex items-center text-left focus:outline-none">
-          <div class="bg-primary/10 p-4 rounded-full mr-5">
-            <i class="fa fa-calendar-check-o text-primary text-4xl"></i>
-          </div>
           <div class="flex-grow">
             <h3 class="text-2xl font-bold text-black">2025年07月19日</h3>
             <p class="text-black text-xl">08:00 — 16:30（线下） <span class="mx-2">|</span> 哈尔滨富力万达嘉华酒店三楼大会议厅</p>
@@ -217,11 +211,8 @@
       </div>
 
       <!-- 720 -->
-      <div class="bg-gray-50 rounded-xl shadow-md overflow-hidden flex-1 min-w-[300px]">
+      <div class="flex-1 min-w-0 max-w-[32%] bg-gray-50 rounded-xl shadow-md overflow-hidden">
         <button onclick="togglePanel1('panel-720')" class="w-full p-6 flex items-center text-left focus:outline-none">
-          <div class="bg-primary/10 p-4 rounded-full mr-5">
-            <i class="fa fa-calendar-check-o text-primary text-4xl"></i>
-          </div>
           <div class="flex-grow">
             <h3 class="text-2xl font-bold text-black">2025年07月20日</h3>
             <p class="text-black text-xl">08:00-16:30（线上）<span class="mx-2">|</span> 腾讯会议平台</p>
@@ -1609,14 +1600,14 @@
             icon.classList.toggle('rotate-180'); // 图标旋转
         }
         
-function togglePanel1(panelId) {
-  document.querySelectorAll('.collapsible-panel').forEach(panel => {
-    if (panel.id === panelId) {
-      panel.classList.toggle('hidden');
-    } else {
-      panel.classList.add('hidden');
-    }
-  });
+        function togglePanel1(panelId) {
+          document.querySelectorAll('.collapsible-panel').forEach(panel => {
+            if (panel.id === panelId) {
+              panel.classList.toggle('hidden');
+            } else {
+              panel.classList.add('hidden');
+            }
+          });
 }
 </script>
 
