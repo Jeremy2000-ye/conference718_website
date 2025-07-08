@@ -1,0 +1,1806 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>讲者简介 - 2025年龙江卒中大会</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f41b3',
+                        secondary: '#36D399',
+                        accent: '#8B5CF6',
+                        dark: '#1E293B',
+                        light: '#F8FAFC'
+                    },
+                    fontFamily: {
+                        sans: ["Microsoft YaHei", '"FangSong"', 'Arial', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            }
+            .bg-gradient-primary {
+                background: linear-gradient(135deg, #0f41b3 0%, #4f8ff7 100%);
+            }
+            .indent-cn {
+                text-indent: 2em;
+            }
+        }
+    </style>
+    
+</head>
+<body class="bg-gray-50 text-black font-sans">
+    <!-- 顶部横幅图片 -->
+    <div class="w-full overflow-hidden">
+        <!-- 使用relative容器确保图片能超出父容器边缘 -->
+        <div class="relative w-full">
+            <img src="./images/banner2.png" alt="大会横幅" 
+                 class="w-full min-w-full h-[clamp(120px,30vw,300px)] object-cover"
+                 style="margin-left: calc(-50vw + 50%); width: 100vw;">
+        </div>
+    </div>
+    
+    <section id="speaker" class="py-16">
+        <div class="container mx-auto px-4 max-w-[95%]">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-2">讲者简介</h2>
+                <p class="text-gray-500 text-sm">按首字母排序，排名不分前后</p>
+                <div class="w-20 h-1 bg-primary mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div id="cyj" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/head0.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">曹勇军 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal"></p>
+                        </div>
+                    </div>
+                
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+            
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg indent-cn">
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li></li>
+                    </ul>
+                
+                    <p class="mb-4 text-lg indent-cn">
+                    </p>
+                
+                    <p class="text-lg indent-cn">
+                    </p>
+                </div>
+            </div>
+            
+            <div id="glb" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/glb.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">高连波 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal">中国医科大学附属第四医院</p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    
+                    <p class="mb-4 text-lg">
+                    教授，主任医师，中国医科大学附属第四医院党委委员，神经内科主任，神经病学教研室主任，脑血管病治疗中心主任
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li>国家卫健委百万减残工程专家委员会委员</li>
+                      <li>国家神经系统疾病质控中心神经介入专家委委员</li>
+                      <li>中国卒中学会理事</li>
+                      <li>中国卒中学会脑血流与代谢分会副主任委员</li>
+                      <li>中国卒中学会神经介入专业委员会常务委员</li>
+                      <li>中华预防医学会卒中预防与控制委员会常务委员</li>
+                      <li>中国老年医学会神经医学专业委员会常务委员</li>
+                      <li>中国老年医学会神经介入专业学组组长</li>
+                      <li>中国医师学会神经介入专业委员会委员</li>
+                      <li>辽宁省卒中学会副会长</li>
+                      <li>辽宁省神经内科质控中心副主任</li>
+                      <li>辽宁省医师协会神经内科分会副会长</li>
+                      <li>辽宁省生命科学神经重症与介入专委会主任委员</li>
+                    </ul>
+                
+                    <p class="text-lg">
+                    脑血管病临床与基础研究、神经重症疾病、神经精神障碍疾病、神经介入诊断与治疗
+                    </p>
+                </div>
+            </div>
+            
+            <div id="gwp" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/gwp.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">谷文萍 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal">中南大学湘雅医院</p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                    主任医师，中南大学湘雅医院神经内科副主任
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li>中国卒中学会脑小血管病分会副主任委员</li>
+                      <li>中国研究型医院学会头痛与感觉障碍专委会常委</li>
+                      <li>中国医师协会神经内科医师分会头痛与感觉障碍学组委员</li>
+                      <li>湖南省卒中学会副会长</li>
+                      <li>湖南省卒中学会脑小血管病专委会主任委员</li>
+                      <li>江西省卒中学会头痛专委会主任委员</li>
+                      <li>湖南省医学会神经病学分会头痛学组组长</li>
+                      <li>湖南省脑血管病防治中心副主任</li>
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                    </p>
+                
+                    <p class="text-lg">
+                    </p>
+                </div>
+            </div>
+            
+            <div id="gzn" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/head0.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">郭珍妮 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal"></p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li></li>
+                 
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                    </p>
+                
+                    <p class="text-lg">
+                    </p>
+                </div>
+            </div>
+            
+            <div id="hw" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/head0.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">胡伟 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal"></p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li></li>
+                 
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                    </p>
+                
+                    <p class="text-lg">
+                    </p>
+                </div>
+            </div>
+            
+            <div id="hb" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/head0.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">胡波 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal"></p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li></li>
+                 
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                    </p>
+                
+                    <p class="text-lg">
+                    </p>
+                </div>
+            </div>
+            
+            <div id="hla" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/head0.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">黄立安 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal"></p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li></li>
+                 
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                    </p>
+                
+                    <p class="text-lg">
+                    </p>
+                </div>
+            </div>
+            
+            <div id="jh" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/jh.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">靳航 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal">中山大学附属第一医院</p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                    教授，主任医师，博士研究生导师，吉林大学第一医院神经内科卒中中心副主任，曾在美国密歇根大学留学2年
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li>中华医学会神经病学分会脑血管病学组青年委员</li>
+                      <li>中国老年医学学会脑血管病分会常务委员</li>
+                      <li>中国卒中学会第二届青年理事会理事</li>
+                      <li>吉林省卒中学会急诊急救分会主任委员</li>
+                      <li>中华医学会神经病学分会第八届委员会候任主任委员</li>
+                      <li>《中华脑血管病杂志》编委</li>
+                    </ul>
+                
+                    <p class="text-lg">
+                    以第一/通讯作者身份发表高质量论文20余篇，作为课题负责人承担国家自然科学基金2项。
+                    </p>
+                </div>
+            </div>
+            
+            <div id="jj" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/head0.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">荆京 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal"></p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li></li>
+                 
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                    </p>
+                
+                    <p class="text-lg">
+                    </p>
+                </div>
+            </div>
+            
+            <div id="lq" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/head0.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">李琦 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal"></p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li></li>
+                 
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                    </p>
+                
+                    <p class="text-lg">
+                    </p>
+                </div>
+            </div>
+            
+            <div id="ljw" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/ljw.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">李敬伟 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal">南京大学医学院附属苏州医院</p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                    教授，主任医师，博士生导师，南京大学医学院附属苏州医院党委副书记、院长，南京大学医学院附属鼓楼医院内科书记、神经科副主任
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li>江苏省六大高峰人才、江苏省333人才、苏州市A类特聘医学人才</li>
+                      <li>中国医师协会神经内科医师分会常务委员</li>
+                      <li>中国卒中学会青年理事会副理事长</li>
+                      <li>中国研究型医院协会脑小血管病分会委员兼秘书长</li>
+                      <li>江苏省医学会神经病学分会候任主任委员</li>
+                      <li>江苏省医师协会脑卒中专委会主任委员</li>
+                      <li>江苏省卒中学会现代诊治专委会主任委员</li>
+                      <li>江苏省卒中学会神经介入专委会副主任委员</li>
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                    第一负责人主持国家自然科学基金两项，省部级课题六项。
+                    <p class="text-lg">
+                    获得江苏省科学技术一等奖及二等奖各一项（排名第三），江苏省老年医学科技一等奖一项（排名第一），江苏省新技术引进一等奖三项（排名第二），南京市新技术奖一项（排名第一）
+                    </p>
+                </div>
+            </div>
+            
+            <div id="lrw" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/lrw.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">李伟荣 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal">山西省心血管病医院</p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                    博士，美国迈阿密大学访问学者，主任医师，山西医科大学博士研究生导师及博士后合作导师，山西省心血管病医院神经内科主任。
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li>中国卒中学会重症脑血管病分会常委</li>
+                      <li>中国卒中学会脑小血管病分会常委</li>
+                      <li>山西省医学会神经病学专业委员会候任主任委员</li>
+                      <li>山西省医师协会神经病学分会副会长</li>
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                    主要从事脑血管病防治的临床和基础研究，已完成国家、省部和地市级科研项目41项（包括国家重点研发计划慢病项目、国家自然科学基金联合重点项目和973课题），正承担国家自然科学基金重点项目，已发表论文400余篇，其中SCI收录166篇。主编专著8本，参与编写专著32本 。
+                    </p>
+                    <p class="text-lg">
+                    获省部级科研成果奖17项，其中 “缺血性卒中远隔损害和神经可塑性评价体系的建立和应用” 获教育部科学技术进步一等奖（排名第一）。
+                    </p>
+                </div>
+            </div>
+            
+            <div id="liuq" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/head0.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">刘强 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal"></p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li></li>
+                 
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                    </p>
+                
+                    <p class="text-lg">
+                    </p>
+                </div>
+            </div>
+            
+            <div id="lxf" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/lxf.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">刘新峰 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal">中国科学技术大学附属第一医院</p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                    教授，主任医师，博士生导师。中国科学技术大学附属第一医院副院长、南京大学神经病学研究所所长，入选国家百千万人才工程、全国优秀科技工作者和军队杰出专业技术人才奖。享受国务院政府特殊津贴。荣立二等功2次。
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li>中国研究型医院学会介入神经病学专业委员会主任委员</li>
+                      <li>中国医师协会神经内科医师分会常委</li>
+                      <li>神经介入专委会主委</li>
+                      <li>中华医学会神经病学分会神经血管介入协作组组长</li>
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                    从事脑小血管病认知及神经心理研究。主持国家自然科学基金、科技部科技创新2030重大项目分课题，省市级科研课题5项，发表论文10余篇。
+                    </p>
+                    <p class="text-lg">
+                    主要研究方向包括脑血管病介入诊断与治疗、脑血管病人工智能辅助诊断与临床预后及神经系统疾病转化医学研究。以第一完成人获得国家科技进步二等奖1项、获得省部级科技进步一等奖共5项。以第一或通讯作者在 New England Journal of Medicine、Lancet、 BMJ-British Medical Journal、Lancet Neurology、Journal of Clinical Investigation、Nature Communications、Neurology等期刊发表SCI论文300余篇。负责国家自然基金重点、重大国际合作项目和国家重点研发计划专项等课题30余项。牵头制定了中国脑血管病介入诊断与治疗相关指南或专家共识15部。
+                    </p>
+                </div>
+            </div>
+            
+            <div id="lzj" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/lzj.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">刘尊敬 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal">中国科学技术大学附属第一医院</p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                    教授，主任医师，博士生导师，博士后合作导师，北京大学人民医院神经内科主任。
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li>中华医学会神经病学专业委员会青年委员</li>
+                      <li>中华医学会神经病学专业委员会脑血管病学组委员</li>
+                      <li>中国医师协会神经病学专业委员会委员</li>
+                      <li>中国医师协会神经病学专业委员会脑血管病学组委员等学术职务</li>
+                      <li>北京医学会神经病学专业委员会常务委员及神经介入与神经影像学组组长</li>
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                    </p>
+                    <p class="text-lg">
+                    主持国家自然科学基金课题6项，科技部重点研发项目子课题1项。
+                    </p>
+                </div>
+            </div>
+            
+            <div id="lm" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/head0.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">楼敏 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal"></p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li></li>
+                 
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                    </p>
+                
+                    <p class="text-lg">
+                    </p>
+                </div>
+            </div>
+            
+            <div id="lzq" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/lzq.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">陆正齐 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal">中山大学附属第三医院</p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                    二级教授，主任医师，博士生导师 ，中山大学附属第三医院神经科主任，脑病中心常务副主任，睡眠医学中心主任。
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li>中国卒中学会脑小血管病分会主任委员</li>
+                      <li>中国卒中学会常务理事</li>
+                      <li>广东省医学会神经病学分会主任委员</li>
+                      <li>广东省卒中学会认知障碍分会主任委员</li>
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                    主要研究领域：脑血管病、神经免疫性疾病。
+                    </p>
+                    
+                    <p class="mb-4 text-lg">
+                    主要学术成就：脑小血管病研究获得获得国家重大研发课题一项，国家自然基金6项，省、部级重大基金8项，省自然和省计划项目10项；以通讯作者发表SCI 论文60余篇，包括Nature Communication、 Signal Transduction & Targeted Therapy、 Science Advances ，Advanced Science、 Autophagy、Microbiome、 Stroke。
+                    </p>
+                    
+                    <p class="text-lg">
+                    科技进步奖：以第一完成人获得省科技厅科技进步二等奖1项，第二完成人获得省科技进步二等奖2项。
+                    </p>
+                </div>
+            </div>
+            
+            <div id="lx" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/lx.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">骆翔 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal">华中科技大学附属同济医院</p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                    三级教授，主任医师，博士生导师，华中科技大学附属同济医院神经内科常务副主任。
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li>中华医学会神经病学分会青年委员会委员</li>
+                      <li>中华医学会神经病学分会脑血管病学组委员</li>
+                      <li>中华医学会罕见病分会委员</li>
+                      <li>中华医学会神经病学分会介入协作组成员</li>
+                      <li>中国研究型医院学会介入神经病学专业委员会常委</li>
+                      <li>中国卒中学会第二届青年理事会常务理事</li>
+                      <li>中国卒中学会神经介入分会委员</li>
+                      <li>湖北省医学会神经病学分会常务委员兼秘书</li>
+                      <li>湖北省医学会神经病学分会介入学组组长</li>
+                      <li>第4版八年制《神经病学》教材编委</li>
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                    主要研究方向：缺血性脑血管病血管内介入诊疗的基础和临床研究。
+                    </p>
+                    
+                    <p class="text-lg">
+                    湖北省“楚天英才计划·科技创新团队”、武汉中青年医学骨干人才、2015年赴美国哈佛大学附属医院访学，发表SCI论文80余篇。主持国家自然基金面上项目3项，湖北省和武汉市重大专项2项。作为项目主要研究人员获教育部自然科学奖一等奖和湖北省科技进步三等奖。
+                    </p>
+                </div>
+            </div>
+            
+            <div id="mqf" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/head0.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">马青峰 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal"></p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li></li>
+                 
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                    </p>
+                
+                    <p class="text-lg">
+                    </p>
+                </div>
+            </div>
+            
+            <div id="mh" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/lx.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">孟珩 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal">暨南大学附属第一医院</p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                    主任医师，博士研究生导师，暨南大学附属第一医院神经内科
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li>中国研究型医院协会神经科学专业委员会委员</li>
+                      <li>国家自然科学基金&广东省自然科学基金 通讯评审专家</li>
+                      <li>卫健委卒中中心检查组成员</li>
+                      <li>广东省医师协会神经内科分会委员兼秘书长</li>
+                      <li>广东省医学会神经病学分会委员</li>
+                      <li>首批广东省杰出青年医学人才&广东省青年五四奖章个人奖项</li>
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                    曾荣获广东省优秀博士论文、暨南大学青年榜样、广东省好医生仁心奖、广东省最强科室实力中青年医生称号、全国卒中菁莘计划全国总决赛优胜奖、梁仲景医学科研奖、羊城好医生、广东省卒中学会及广东省医师协会神经内科分会联合最佳年度优秀导师等；曾随队荣获中宣部“时代楷模”荣誉称号。
+                    </p>
+                    
+                    <p class="text-lg">
+                    主要研究方向：脑血管病、癫痫、神经遗传性疾病及医学人工智能领域。主持国家自然科学基金、中国卒中学会新瑞基金、广东省自然科学基金、广东省高水平医院登峰计划基金、广州市科技计划项目、广州市校联合基金及中央高校基金等多个科研基金，近年发表AI-I区/TOP SCI论文如Brain，American Journal of Human Genetics(AJHG)，Genetics in Medicine， Human mutation，Journal of Medical Genetics，Translational stroke research，Epilepsia等多篇。                    </p>
+                </div>
+            </div>
+            
+            <div id="mdh" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/head0.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">米东华 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal"></p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li></li>
+                 
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                    </p>
+                
+                    <p class="text-lg">
+                    </p>
+                </div>
+            </div>
+            
+            <div id="ngx" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/head0.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">南光贤 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal"></p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li></li>
+                 
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                    </p>
+                
+                    <p class="text-lg">
+                    </p>
+                </div>
+            </div>
+            
+            <div id="shz" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/head0.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">史怀璋 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal"></p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li></li>
+                 
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                    </p>
+                
+                    <p class="text-lg">
+                    </p>
+                </div>
+            </div>
+            
+            <div id="sxb" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/head0.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">史旭波 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal"></p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li></li>
+                 
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                    </p>
+                
+                    <p class="text-lg">
+                    </p>
+                </div>
+            </div>
+            
+            <div id="sb" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/head0.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">宋波 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal"></p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li></li>
+                 
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                    </p>
+                
+                    <p class="text-lg">
+                    </p>
+                </div>
+            </div>
+            
+            <div id="sy" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/sy.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">隋轶 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal">中国医科大学沈阳市第四人民医院</p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                        主任医师，教授，硕士生导师，墨尔本大学博士/博士后。中国医科大学沈阳市第四人民医院副院长，“兴沈英才”领军医学名家
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                        <li>Stroke and Vascular Neurology 副编</li>
+                        <li>BMC Neurology 编委，Frontiers in Stroke编委</li>
+                        <li>国家自然科学基金评审专家</li>
+                        <li>国家高层次人才同行评议专家</li>
+                        <li>中国老年医学学会神经医学分会委员</li>
+                        <li>中国卒中学会脑健康分会常务委员</li>
+                        <li>中国卒中学会青年理事会常务理事</li>
+                        <li>沈阳医学会神经内科分会主任委员</li>
+                        <li>辽宁省细胞生物学学会脑血管病分会主任委员</li>
+                        <li>世界心脏联合会（WHF）新锐领袖计划成员</li>
+                        <li>OPTIMISTMain研究中国区负责人</li>
+                        <li>Lancet Regional Health, Neurology，Stroke, JAHA, SVIN等期刊审稿人</li>
+                    </ul>
+                
+                    <p class="text-lg">
+                        研究方向为缺血性卒中影像学、神经介入影像学、成熟个体CNS神经发生、急性卒中治疗体系优化和质量控制。在国际期刊发表SCI文章70余篇（包括以通讯和第一作者发表了一篇Lancet文章），近5年被引用1500余次，i10-index 36（https://orcid.org/0000-0002-2898-7877）。主持国家、省市级科研基金8项，参与国内合作课题40余项，国际合作课题10项。
+                    </p>
+                </div>
+            </div>
+            
+            <div id="sqj" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/head0.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">孙钦建 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal"></p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li></li>
+                 
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                    </p>
+                
+                    <p class="text-lg">
+                    </p>
+                </div>
+            </div>
+            
+            <div id="tcy" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/tcy.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">汤常永 副研究员</h3>
+                            <p class="text-sm text-gray-500 font-normal">中山大学附属第三医院</p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                        副研究员，中国科学院博士、美国布朗大学博士后，中山大学附属第三医院神经内科
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                        <li>中山大学“百人计划”引进人才</li>
+                        <li>广东省医疗行业协会神经内科管理分会脑病学组副组长</li>
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                        主要研究领域：神经干细胞和星形胶质细胞及其微环境在神经退行性疾病（如衰老、AD等）和神经免疫性疾病（如NMOSD、MS等）中的作用
+                    </p>
+                    
+                    <p class="text-lg">
+                        主要学术成就：主持国家自然基金面上、青年，科技创新-2030脑计划青年项目，国家重点研发计划递补支持专题重大科技项目，广州市基础与应用基础科学基金、企业横向课题等，以第一作者或最后通讯发表多篇SCI 论文，包括Neuron、Science Advances (2篇)、Molecular Psychiatry(2篇)、Molecular Therapy (2篇)、Cell reports (3篇)、Glia等杂志。
+                    </p>
+                </div>
+            </div>
+            
+            <div id="twy" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/head0.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">滕伟禹 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal"></p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li></li>
+                 
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                    </p>
+                
+                    <p class="text-lg">
+                    </p>
+                </div>
+            </div>
+            
+            <div id="wz" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/head0.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">王赞 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal"></p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li></li>
+                 
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                    </p>
+                
+                    <p class="text-lg">
+                    </p>
+                </div>
+            </div>
+            
+            <div id="wax" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/wax.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">王安心 研究员</h3>
+                            <p class="text-sm text-gray-500 font-normal">首都医科大学附属北京天坛医院</p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                        研究员，副教授，博士研究生导师，首都医科大学附属北京天坛医院北京市神经外科研究所-流行病学研究室-副主任，首都医科大学临床流行病学与临床试验学系-办公室主任，国家神经系统疾病临床医学研究中心-统计组长。
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                        <li>中国卒中学会青年理事会常务理事和秘书长</li>
+                        <li>中华医学会临床流行病学和循证医学分会青年委员</li>
+                        <li>北京脑血管病防治协会理事</li>
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                        主要研究方向为脑血管病流行病学与临床研究方法学。主持十四五重点研发计划、国自然面上等多项国家级课题，参与“国家卒中登记研究Ⅰ-Ⅲ”、“CHANCE研究Ⅰ-Ⅲ”、“开滦研究”等多项大型研究，研究成果发表在NEJM、JAMA等权威杂志。
+                    </p>
+                    
+                    <p class="text-lg">
+                        入选青年长江学者、中国科协青年人才托举工程等。《天坛临床试验手册》副主编、Stroke and Vascular Neurology、Brain Circulation等杂志编委，至今以第一或通讯作者在BMJ、Annals of Internal Medicine、JAMA Neurology等杂志上发表SCI收录论文100余篇，入选2024年全球前2%顶尖科学家榜单。
+                    </p>
+                </div>
+            </div>
+            
+            <div id="wyl" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/wyl.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">王伊龙 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal">首都医科大学附属北京天坛医院</p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                        教授，主任医师，博士生导师，北京天坛医院常务副院长
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                        <li>首都医科大学附属北京天坛医院 神经病学中心首席科学家</li>
+                        <li>北京脑科学与类脑研究中心特聘教授</li>
+                        <li>中国卒中学会脑小血管病分会副主任委员</li>
+                        <li>中国卒中学会青年理事会执行理事长</li>
+                        <li>中华医学会神经病学分会青年委员会副主任委员</li>
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                        研究领域：脑小血管病临床与基础研究
+                    </p>
+                    
+                    <p class="text-lg">
+                        以通讯作者在 NEJM、JAMA、BMJ、Lancet N、Circulation、JAMA Neurology等杂志发表论文170余篇，获得国家发明专利5项。
+                    </p>
+                    
+                    <p class="text-lg mt-4">
+                        国家杰出青年科学基金、教育部（青年）长江学者、中组部“万人”计划、北京高校卓越青年科学家、第七届“树兰医学青年奖”、青年北京学者。
+                    </p>
+                </div>
+            </div>
+            
+            <div id="wjl" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/wjl.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">巫嘉陵 主任医师</h3>
+                            <p class="text-sm text-gray-500 font-normal">天津市环湖医院</p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                        美国Emory大学博士后，主任医师，博士生导师，天津市环湖医院副院长
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                        <li>天津市优秀科技工作者</li>
+                        <li>首批“天津市津门医学英才”</li>
+                        <li>天津市“131”工程第一层次人选</li>
+                        <li>中国卒中学会理事</li>
+                        <li>天津市医学会神经病学分会副主任委员</li>
+                        <li>天津市神经内科质控中心主任</li>
+                        <li>中华医学会神经病学分会神经康复学组委员</li>
+                        <li>中国医师协会神经内科分会神经康复学组委员</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div id="wb" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/head0.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">吴波 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal"></p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li></li>
+                 
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                    </p>
+                
+                    <p class="text-lg">
+                    </p>
+                </div>
+            </div>
+            
+            <div id="xj" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/head0.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">夏健 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal"></p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li></li>
+                 
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                    </p>
+                
+                    <p class="text-lg">
+                    </p>
+                </div>
+            </div>
+            
+            <div id="xy" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/head0.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">冼颖 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal"></p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li></li>
+                 
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                    </p>
+                
+                    <p class="text-lg">
+                    </p>
+                </div>
+            </div>
+            
+            <div id="xyy" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/xyy.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">熊云云 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal">首都医科大学附属北京天坛医院</p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                        主任医师，教授，博士研究生导师，首都医科大学附属北京天坛医院神经病学中心血管神经病学科副主任，中国卒中学会临床研究中心主任、标准与指南研究中心主任
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                        <li>科技创新2030“四大慢病”国家科技重大专项首席科学家</li>
+                        <li>国家万人计划“青年拔尖人才”</li>
+                        <li>北京市杰青、北京市青年海聚人才</li>
+                        <li>世界卒中组织Future Stroke Leaders</li>
+                        <li>Stroke期刊客座编辑</li>
+                    </ul>
+                
+                    <p class="text-lg">
+                        主要研究方向为缺血性卒中再灌注治疗，在NEJM, JAMA Neurology等SCI期刊作为第一作者/通讯作者发表论文54篇，获批国家发明专利7项；主持国家及省部级课题6项。
+                    </p>
+                </div>
+            </div>
+            
+            <div id="yj" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/yj.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">杨杰 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal">四川省人民医院</p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                        主任医师、博士生导师，四川省医学科学院·四川省人民医院神经内科副主任
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                        <li>国际亚太卒中学会专业委员会常务委员</li>
+                        <li>中国老年医学学会卒中委员会主任委员</li>
+                        <li>四川省医促会神经病学专委会主任委员</li>
+                        <li>四川省“天府峨眉计划”创新领军人才</li>
+                    </ul>
+                
+                    <p class="text-lg">
+                        主持大型临床研究3项、国家自然基金4项。发表SCI论文80余篇，NEJM杂志论文1篇。
+                    </p>
+                </div>
+            </div>
+            
+            <div id="yqw" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/yqw.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">杨清武 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal">陆军（第三）军医大学第二附属医院</p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                        教授、主任医师，博士研究生导师。陆军（第三）军医大学第二附属医院神经医学中心主任，脑与智能科技创新中心主任，陆军军医大学脑与智能研究院副院长，重庆脑与智能科学中心资深研究员
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                        <li>国家杰出青年科学基金获得者</li>
+                        <li>国家教育部长江学者特聘教授</li>
+                        <li>国家万人计划领军人才</li>
+                        <li>重庆市英才计划优秀科学家</li>
+                        <li>国务院特殊津贴专家</li>
+                        <li>中华医学会神经病学分会委员</li>
+                        <li>中国医师协会神经内科医师分会委员</li>
+                        <li>重庆市卒中学会会长</li>
+                    </ul>
+                
+                    <p class="text-lg">
+                        从事急性脑血管病防治的基础与临床转化研究，以第一负责人主持国家科技创新2030重大项目、国家自然科学基金重大项目、国家杰出青年科学基金、重点项目，国家973课题等各级科研课题20余项。以通讯作者在NEJM、JAMA（4篇）、JAMA Neurology、Circulation、Ann Neurol、Prog Neurobiol、Stroke、J Immunol、J Biol Chem等高影响杂志发表论文80余篇。
+                    </p>
+                </div>
+            </div>
+            
+            <div id="yss" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/yss.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">杨珊珊 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal">哈尔滨医科大学附属第一医院</p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                        哈尔滨医科大学附属第一医院神经内科副主任，博士、博士后，主任医师、教授，硕士研究生导师。
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                        <li>中华医学会神经病学分会第八届委员会青年委员</li>
+                        <li>黑龙江省老年学和老年医学学会神经免疫专业委员会主任委员</li>
+                        <li>中国卒中学会脑小血管病分会第二届委员会委员</li>
+                        <li>黑龙江省医师协会脑小血管病分会副主任委员</li>
+                        <li>黑龙江省医师协会神经重症专业委员会委员</li>
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                        主持6项省级课题，两项校院级课题，参与一项国自然面上项目，发表9篇SCI文章，参编人民卫生出版社及高等教育出版社教材三部，曾赴美国德州大学博士后研究工作两年。
+                    </p>
+                    
+                    <p class="text-lg">
+                        主要擅长脑血管病、神经免疫疾病（重症肌无力、视神经脊髓炎谱系疾病、多发性硬化等）的诊疗。
+                    </p>
+                </div>
+            </div>
+            
+            <div id="yy" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/yy.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">杨弋 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal">吉林大学第一医院</p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                        教授，主任医师，博士生导师，教育部长江学者特聘教授，入选国家百千万人才工程。现任吉林大学第一医院党委副书记兼副院长、神经专科医院院长，吉林省神经内科医疗质量控制中心主任
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                        <li>中国医师协会神经内科医师分会脑血管病学组秘书</li>
+                        <li>中华医学会神经病学分会常委</li>
+                        <li>脑血管病学组副组长</li>
+                        <li>国家卫健委百万减残工程专家委员会副主任委员</li>
+                        <li>中国卒中学会常务理事</li>
+                        <li>中国卒中专科联盟副主席</li>
+                        <li>吉林省医学会神经病学分会主委</li>
+                        <li>吉林省卒中学会会长</li>
+                    </ul>
+                
+                    <p class="text-lg">
+                        主要研究方向为脑血管病，在JAMA Neurology、Neurology、Stroke等期刊累计发表学术论文100余篇；主持国家科技部重点研发计划、国家自然科学基金及其他省部级课题30余项；参编国家级神经病学教材9部；获吉林省科技进步一等奖2项。
+                    </p>
+                </div>
+            </div>
+            
+            <div id="yjia" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/yjia.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">尹恝 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal">南方医科大学南方医院</p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                        主任医师，教授，博士生导师，博士后合作导师，南方医科大学南方医院神经内科脑血管病亚专科主任
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                        <li>广东省医学会脑血管病学分会 主任委员 重症学组组长</li>
+                        <li>中国医师协会神经病学分会脑血管病学组组员</li>
+                        <li>中国卒中学会脑小血管病学分会常委</li>
+                        <li>中国研究型医院学会神经科学专业委员会常委</li>
+                        <li>广东省卒中学会常务理事 脑血流代谢分会副主委</li>
+                        <li>广东省脑科学应用学会脑与医疗质控分会副主委</li>
+                        <li>广东省医院协会神经内科分会副主委</li>
+                        <li>广东省医学会神经病学分会 肠道微生态与神经系统疾病转化学组组长</li>
+                        <li>首届广东省杰出青年医学人才，获第十届羊城好医生称号</li>
+                    </ul>
+                
+                    <p class="text-lg">
+                        以通讯作者在GUT、Cell Reports Medicine、Critical Care、Journal of Neuroinflammation、Journal of Advanced Research、 Brain, behavior, and immunity等期刊发表SCI论文，主持国家自然基金面上项目4项，省部市级基金10余项，以参与人身份分别获广东省科自然科学奖一等奖1项及广东省科学技术二等奖1项。
+                    </p>
+                </div>
+            </div>
+            
+            <div id="ych" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/head0.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">尹昌浩 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal"></p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li></li>
+                 
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                    </p>
+                
+                    <p class="text-lg">
+                    </p>
+                </div>
+            </div>
+            
+            <div id="zl" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/zl.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">张乐 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal">中南大学湘雅医院</p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                        一级主任医师，教授，博导，美国Case Western Reserve University归国学者。中南大学湘雅医院副院长，湘雅江西医院（国家区域医疗中心）执行院长，国家重大专项首席科学家，国家区域医疗中心负责人，湖南省重症脑血管病多模态监测工程中心主任，湖南省脑损伤评价质控中心主任，湖南省脑健康中心主任，湖南省人类脑资源平台主任
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                        <li>国家脑损伤评价质控中心委员和脑死亡判定专家工作委员会副主任委员</li>
+                        <li>中华医学会神经病学会神经重症协作组副组长</li>
+                        <li>中华医学会肠外肠内营养学会神经营养支持学组副组长</li>
+                        <li>中华医学会神经病学会青年学组副组长</li>
+                        <li>中国卒中学会常务理事</li>
+                        <li>中国卒中专科联盟常委兼重症管理专家委员会副主委</li>
+                        <li>中国抗癫痫联盟重症专委会副主委</li>
+                        <li>湖南省卒中学会会长</li>
+                        <li>湖南省百万减残工程专家委员会主任委员</li>
+                        <li>湖南省卒中学会重症脑血管专业委员会主任委员</li>
+                        <li>湖南省医学会神内专委会神经重症学组组长</li>
+                        <li>中央组织部优秀援疆干部人才，湖南省科技领军创新人才、湖南省卫健委高层次人才，湖南省青年骨干教师</li>
+                    </ul>
+                
+                    <p class="text-lg">
+                        主持国家重大专项1项、国家自然科学基金3项、省部级重大课题10余项。发表SCI等权威杂志论文100余篇；获软件著作权7项；获湖南省科学技术进步奖、湖南省医学科技奖和湖南省教学成果奖等多个奖项。
+                    </p>
+                </div>
+            </div>
+            
+            <div id="zli" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/head0.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">张丽 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal"></p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li></li>
+                 
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                    </p>
+                
+                    <p class="text-lg">
+                    </p>
+                </div>
+            </div>
+            
+            <div id="zzl" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/zzl.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">张忠玲 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal">哈尔滨医科大学附属第一医院</p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                        哈医大一院神经内科主任，神经病学学科带头人、教研室主任，群力神经内科主任，主任医师，教授，博士研究生导师，首届龙江名医。
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                        <li>中华医学会神经病学分会第五届青委会委员</li>
+                        <li>中国医师协会神经内科分会脑血管病学组委员、中国老年医学会神经医学分会副会长</li>
+                        <li>中国卒中学会头痛分会副主任委员</li>
+                        <li>中国卒中学会脑小血管病分会常委</li>
+                        <li>黑龙江省医学会神经病学分会副主任委员</li>
+                        <li>黑龙江省医学会脑卒中专委会副主任委员</li>
+                        <li>黑龙江省医学会脑白质病变专科联盟主席</li>
+                        <li>黑龙江省医师协会脑小血管病专委会主任委员</li>
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                        发表国家级文章58篇，SCI收录17篇（单篇最高影响因子13.217），主持国家自然科学基金、教育部、省重点研发项目等12项，参编卫生部规划教材（人民卫生出版社）6部，临床指南与专家共识13篇。
+                    </p>
+                    
+                    <p class="text-lg">
+                        获黑龙江省政府科技进步二等奖1项，黑龙江省医疗新技术二等奖2项。主要擅长脑血管病、头痛、脑白质病变等疾病的诊疗。
+                    </p>
+                </div>
+            </div>
+
+            <div id="zjs" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/zjs.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">曾进胜 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal">中山大学附属第一医院</p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                        教授，博士生导师，中山大学附属第一医院副院长、神经科学科带头人
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li>首届国家杰出医师</li>
+                      <li>国务院特殊津贴专家</li>
+                      <li>国家卫生健康突出贡献中青年专家</li>
+                      <li>《中国神经精神疾病杂志》主编</li>
+                      <li>中华医学会神经病学分会第八届委员会候任主任委员</li>
+                      <li>中国医师协会神经内科医师分会副会长</li>
+                      <li>广东省脑科学应用学会会长</li>
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                    主要从事脑血管病防治的临床和基础研究，已完成国家、省部和地市级科研项目41项（包括国家重点研发计划慢病项目、国家自然科学基金联合重点项目和973课题），正承担国家自然科学基金重点项目，已发表论文400余篇，其中SCI收录166篇。主编专著8本，参与编写专著32本                    </p>
+                    <p class="text-lg">
+                    获省部级科研成果奖17项，其中 “缺血性卒中远隔损害和神经可塑性评价体系的建立和应用” 获教育部科学技术进步一等奖（排名第一）                    </p>
+                </div>
+            </div>
+            
+            <div id="zcs" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/head0.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">赵传胜 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal"></p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li></li>
+                 
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                    </p>
+                
+                    <p class="text-lg">
+                    </p>
+                </div>
+            </div>
+            
+            <div id="zdx" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/head0.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">赵冬雪 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal"></p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li></li>
+                 
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                    </p>
+                
+                    <p class="text-lg">
+                    </p>
+                </div>
+            </div>
+            
+            <div id="zd" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/head0.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">钟镝 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal"></p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li></li>
+                 
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                    </p>
+                
+                    <p class="text-lg">
+                    </p>
+                </div>
+            </div>
+            
+            <div id="zwj" class="speaker-card bg-white rounded-xl shadow-md mb-4 overflow-hidden transition-colors duration-300">
+                <button 
+                    class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-primary"
+                    onclick="togglePanel(this)">
+                    <div class="flex items-center space-x-4">
+                        <img src="./images/head0.png" alt="头像" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark">资文杰 教授</h3>
+                            <p class="text-sm text-gray-500 font-normal"></p>
+                        </div>
+                    </div>
+                    <i class="fa fa-chevron-down transition-transform duration-300"></i>
+                </button>
+                <div class="collapsible-panel hidden px-6 pb-4 text-gray-700 leading-relaxed">
+                    <p class="mb-4 text-lg">
+                    </p>
+                    
+                    <ul class="list-disc list-inside mb-4 text-lg">
+                      <li></li>
+                 
+                    </ul>
+                
+                    <p class="mb-4 text-lg">
+                    </p>
+                
+                    <p class="text-lg">
+                    </p>
+                </div>
+            </div>
+            
+            </div>
+    </section>
+
+    <footer class="fixed bottom-0 left-0 w-full z-50 bg-gradient-to-t from-red-700 via-red-600 to-red-500 shadow-2xl rounded-t-xl">
+        <div class="w-full px-4 py-3 flex justify-around items-center text-center text-sm md:text-base font-semibold text-yellow-100">
+            <a href="index.html" class="flex flex-col items-center justify-center gap-1 hover:text-yellow-300 transition-colors duration-200">
+                <i class="fa fa-home text-lg md:text-xl"></i>
+                首页
+            </a>
+            <a href="details.html" class="flex flex-col items-center justify-center gap-1 hover:text-yellow-300 transition-colors duration-200">
+                <i class="fa fa-calendar text-lg md:text-xl"></i>
+                会议详情
+            </a>
+            <a href="speakers.html" class="flex flex-col items-center justify-center gap-1 hover:text-yellow-300 transition-colors duration-200">
+                <i class="fa fa-user text-lg md:text-xl"></i>
+                讲者简介
+            </a>
+            <a href="photo.html"
+               class="flex flex-col items-center justify-center gap-1 hover:text-yellow-300 transition-colors duration-200">
+                <i class="fa fa-camera text-lg md:text-xl"></i>
+                照片直播
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        // 主要改动区域：重写了JavaScript折叠逻辑
+        function togglePanel(clickedButton) {
+            const allCards = document.querySelectorAll('.speaker-card');
+            const targetCard = clickedButton.parentElement; // 当前点击的卡片
+
+            allCards.forEach(card => {
+                const panel = card.querySelector('.collapsible-panel');
+                const icon = card.querySelector('i');
+
+                if (card === targetCard) {
+                    // C. 如果是当前点击的卡片，则切换它的状态
+                    panel.classList.toggle('hidden');
+                    icon.classList.toggle('rotate-180');
+
+                    // D. 根据展开状态设置背景色
+                    if (panel.classList.contains('hidden')) {
+                        // 如果是关闭状态，恢复白色
+                        card.classList.remove('bg-blue-100');
+                        card.classList.add('bg-white');
+                    } else {
+                        // 如果是展开状态，变为蓝色
+                        card.classList.remove('bg-white');
+                        card.classList.add('bg-blue-100');
+                    }
+                } else {
+                    // A. 对于所有其他卡片，强制关闭
+                    panel.classList.add('hidden');
+                    icon.classList.remove('rotate-180');
+                    // B. 并将背景色恢复为白色
+                    card.classList.remove('bg-blue-100');
+                    card.classList.add('bg-white');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

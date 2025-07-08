@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>照片直播</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f41b3',
+                        secondary: '#36D399',
+                        accent: '#8B5CF6',
+                        dark: '#1E293B',
+                        light: '#F8FAFC'
+                    },
+                    fontFamily: {
+                        sans: ["Microsoft YaHei", '"FangSong"', 'Arial', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            }
+            .bg-gradient-primary {
+                background: linear-gradient(135deg, #0f41b3 0%, #4f8ff7 100%);
+            }
+            .timeline-line {
+                @apply absolute top-0 bottom-0 left-0 w-0.5 bg-primary/30 transform -translate-x-1/2;
+            }
+            .timeline-dot {
+                @apply absolute top-0 left-0 w-4 h-4 bg-primary rounded-full transform -translate-x-1/2;
+            }
+            .image-hover {
+                @apply transition-all duration-300 hover:scale-105 hover:shadow-lg;
+            }
+        }
+    </style>
+    
+</head>
+<body class="bg-gray-50 text-black font-sans leading-relaxed">
+    <!-- 顶部横幅图片 -->
+    <div class="w-full overflow-hidden">
+        <!-- 使用relative容器确保图片能超出父容器边缘 -->
+        <div class="relative w-full">
+            <img src="./images/banner2.png" alt="大会横幅" 
+                 class="w-full min-w-full h-[clamp(120px,30vw,300px)] object-cover"
+                 style="margin-left: calc(-50vw + 50%); width: 100vw;">
+        </div>
+    </div>
+    
+    <section id="details" class="py-16">
+        <div class="container mx-auto px-4 max-w-[95%]">
+            <!-- 标题区域 -->
+            <div class="text-center mb-12">
+                <h2 class="text-[clamp(1.8rem,5vw,2.5rem)] font-bold 大会照片直播 mb-4 relative inline-block">
+                    大会照片直播
+                    <div class="w-20 h-1 bg-primary mx-auto rounded-full"></div>
+                    
+                </h2>
+                <p class="text-gray-600 mt-4 text-lg">点击下方图片查看对应日期的精彩瞬间</p>
+            </div>
+            
+            <!-- 时间轴容器 -->
+            <div class="relative">
+                <!-- 时间轴中心线 -->
+                <div class="absolute left-1/2 top-0 bottom-0 w-0.5 bg-primary/30 hidden md:block"></div>
+                
+                <!-- 18日照片直播 -->
+                <div class="timeline-item mb-12 relative">
+                    <div class="max-w-4xl mx-auto">
+                        <div class="flex flex-col md:flex-row items-center gap-6">
+                            
+                            <!-- 图片区域 -->
+                            <div class="w-full md:w-1/2 relative">
+                                <a href="https://www.uphoto.cn/m/album_ia1377518530.html" target="_blank" class="block rounded-xl overflow-hidden shadow-md image-hover">
+                                    <img src="./images/photo_logo.jpg" alt="18日会议现场照片" class="w-full h-auto object-cover">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-4">
+                                        <span class="text-white font-bold text-lg">点击查看18日直播</span>
+                                    </div>
+                                </a>
+                                <!-- 移动端日期标记 -->
+                                <div class="md:hidden absolute -left-4 top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-sm shadow-lg z-10">
+                                    18日
+                                </div>
+                            </div>
+                            
+                            <!-- 内容区域 -->
+                            <div class="w-full md:w-1/2 md:pl-8">
+                                <h3 class="text-2xl font-bold text-black mb-3 flex items-center">
+                                    <i class="fa fa-calendar-check-o mr-2 text-primary/80"></i>
+                                    18日照片直播
+                                </h3>
+                                <p class="text-gray-700 mb-4">第一天会议的精彩瞬间，包括开幕式、主题演讲和全体会议的现场照片。</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-blue-100 text-primary rounded-full text-sm">开幕式</span>
+                                    <span class="px-3 py-1 bg-blue-100 text-primary rounded-full text-sm">主题演讲</span>
+                                    <span class="px-3 py-1 bg-blue-100 text-primary rounded-full text-sm">全体会议</span>
+                                </div>
+                                <a href="https://www.uphoto.cn/m/album_ia1377518530.html" target="_blank" class="inline-flex items-center text-primary font-medium hover:underline">
+                                    查看全部照片 <i class="fa fa-arrow-right ml-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 19日照片直播 -->
+                <div class="timeline-item mb-12 relative">
+                    <div class="max-w-4xl mx-auto">
+                        <div class="flex flex-col md:flex-row-reverse items-center gap-6">
+                            
+                            <!-- 图片区域 -->
+                            <div class="w-full md:w-1/2 relative">
+                                <a href="https://www.uphoto.cn/m/album_ia1377518530.html" target="_blank" class="block rounded-xl overflow-hidden shadow-md image-hover">
+                                    <img src="./images/photo_logo.jpg" alt="19日会议现场照片" class="w-full h-auto object-cover">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-4">
+                                        <span class="text-white font-bold text-lg">点击查看19日直播</span>
+                                    </div>
+                                </a>
+                                <!-- 移动端日期标记 -->
+                                <div class="md:hidden absolute -right-4 top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-sm shadow-lg z-10">
+                                    19日
+                                </div>
+                            </div>
+                            
+                            <!-- 内容区域 -->
+                            <div class="w-full md:w-1/2 md:pr-8 text-right md:text-right">
+                                <h3 class="text-2xl font-bold text-black mb-3 flex items-center justify-end">
+                                    <i class="fa fa-calendar-check-o mr-2 text-primary/80"></i>
+                                    19日照片直播
+                                </h3>
+                                <p class="text-gray-700 mb-4">第二天会议的精彩瞬间，包括分会场讨论、演讲分享和互动环节的现场照片。</p>
+                                <div class="flex flex-wrap gap-2 mb-4 justify-end">
+                                    <span class="px-3 py-1 bg-blue-100 text-primary rounded-full text-sm">分会场讨论</span>
+                                    <span class="px-3 py-1 bg-blue-100 text-primary rounded-full text-sm">演讲分享</span>
+                                    <span class="px-3 py-1 bg-blue-100 text-primary rounded-full text-sm">互动环节</span>
+                                </div>
+                                <a href="https://www.example.com/day19" target="_blank" class="inline-flex items-center text-primary font-medium hover:underline">
+                                    查看全部照片 <i class="fa fa-arrow-right ml-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 20日照片直播 -->
+                <div class="timeline-item relative">
+                    <div class="max-w-4xl mx-auto">
+                        <div class="flex flex-col md:flex-row items-center gap-6">
+                            
+                            <!-- 图片区域 -->
+                            <div class="w-full md:w-1/2 relative">
+                                <a href="https://www.uphoto.cn/m/album_ia1377518530.html" target="_blank" class="block rounded-xl overflow-hidden shadow-md image-hover">
+                                    <img src="./images/photo_logo.jpg" alt="20日会议现场照片" class="w-full h-auto object-cover">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-4">
+                                        <span class="text-white font-bold text-lg">点击查看20日直播</span>
+                                    </div>
+                                </a>
+                                <!-- 移动端日期标记 -->
+                                <div class="md:hidden absolute -left-4 top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-sm shadow-lg z-10">
+                                    20日
+                                </div>
+                            </div>
+                            
+                            <!-- 内容区域 -->
+                            <div class="w-full md:w-1/2 md:pl-8">
+                                <h3 class="text-2xl font-bold text-black mb-3 flex items-center">
+                                    <i class="fa fa-calendar-check-o mr-2 text-primary/80"></i>
+                                    20日照片直播
+                                </h3>
+                                <p class="text-gray-700 mb-4">第三天会议的精彩瞬间，包括闭幕式、专题演讲和社交活动的现场照片。</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="px-3 py-1 bg-blue-100 text-primary rounded-full text-sm">闭幕式</span>
+                                    <span class="px-3 py-1 bg-blue-100 text-primary rounded-full text-sm">专题演讲</span>
+                                    <span class="px-3 py-1 bg-blue-100 text-primary rounded-full text-sm">社交活动</span>
+                                </div>
+                                <a href="https://www.uphoto.cn/m/album_ia1377518530.html" target="_blank" class="inline-flex items-center text-primary font-medium hover:underline">
+                                    查看全部照片 <i class="fa fa-arrow-right ml-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 底部留白区域，避免被footer遮挡 -->
+                <div class="h-24 md:h-32"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="fixed bottom-0 left-0 w-full z-50 bg-gradient-to-t from-red-700 via-red-600 to-red-500 shadow-2xl rounded-t-xl">
+  <div class="w-full px-4 py-3 flex justify-around items-center text-center text-sm md:text-base font-semibold text-yellow-100">
+    
+    <a href="index.html" class="flex flex-col items-center justify-center gap-1 hover:text-yellow-300 transition-colors duration-200">
+      <i class="fa fa-home text-lg md:text-xl"></i>
+      首页
+    </a>
+
+    <a href="details.html" class="flex flex-col items-center justify-center gap-1 hover:text-yellow-300 transition-colors duration-200">
+      <i class="fa fa-calendar text-lg md:text-xl"></i>
+      会议详情
+    </a>
+
+    <a href="speakers.html" class="flex flex-col items-center justify-center gap-1 hover:text-yellow-300 transition-colors duration-200">
+      <i class="fa fa-user text-lg md:text-xl"></i>
+      讲者简介
+    </a>
+
+    <a href="photo.html"
+       class="flex flex-col items-center justify-center gap-1 hover:text-yellow-300 transition-colors duration-200">
+      <i class="fa fa-camera text-lg md:text-xl"></i>
+      照片直播
+    </a>
+
+  </div>
+</footer>
+
+</body>
+</html>

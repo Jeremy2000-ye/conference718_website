@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会议详情</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f41b3',
+                        secondary: '#36D399',
+                        accent: '#8B5CF6',
+                        dark: '#1E293B',
+                        light: '#F8FAFC'
+                    },
+                    fontFamily: {
+                        sans: ["Microsoft YaHei", '"FangSong"', 'Arial', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            }
+            .bg-gradient-primary {
+                background: linear-gradient(135deg, #0f41b3 0%, #4f8ff7 100%);
+            }
+        }
+    </style>
+    
+</head>
+<body class="bg-gray-50 text-black font-sans leading-relaxed">
+    <!-- 顶部横幅图片 -->
+    <div class="w-full overflow-hidden">
+        <!-- 使用relative容器确保图片能超出父容器边缘 -->
+        <div class="relative w-full">
+            <img src="./images/banner2.png" alt="大会横幅" 
+                 class="w-full min-w-full h-[clamp(120px,30vw,300px)] object-cover"
+                 style="margin-left: calc(-50vw + 50%); width: 100vw;">
+        </div>
+    </div>
+    
+    <section id="details" class="py-16">
+        <div class="container mx-auto px-4 max-w-[95%]">
+            
+                <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-5xl font-bold text-dark mb-4">会议详情</h2>
+                <div class="w-20 h-1 bg-primary mx-auto rounded-full"></div>
+            </div>
+
+            <div class="flex flex-wrap gap-6 justify-center mb-8">
+        <div class="flex-1 max-w-xs bg-white rounded-xl shadow-md card-hover overflow-hidden">
+          <button onclick="togglePanel1('panel-718')" class="w-full p-6 text-left">
+            <p class="text-sm font-bold text-dark">2025年7月18日</p>
+            <p class="text-sm text-gray-700">13:30—16:00（线下）<br>三楼哈尔滨厅</p>
+          </button>
+        </div>
+
+        <div class="flex-1 max-w-xs bg-white rounded-xl shadow-md card-hover overflow-hidden">
+          <button onclick="togglePanel1('panel-719')" class="w-full p-6 text-left">
+            <p class="text-sm font-bold text-dark">2025年7月19日</p>
+            <p class="text-sm text-gray-700">08:00—16:30（线下）<br>三楼大会议厅</p>
+          </button>
+        </div>
+
+        <div class="flex-1 max-w-xs bg-white rounded-xl shadow-md card-hover overflow-hidden">
+          <button onclick="togglePanel1('panel-720')" class="w-full p-6 text-left">
+            <p class="text-sm font-bold text-dark">2025年7月20日</p>
+            <p class="text-sm text-gray-700">08:00—16:30（线上）<br>腾讯会议平台</p>
+          </button>
+        </div>
+      </div>
+            <div id="panel-718" class="collapsible-panel hidden bg-white shadow-md p-6 rounded-xl mb-6 w-full">
+                <h4 class="text-xl font-bold mb-4">18号下午主会场（三楼哈尔滨厅）</h4>
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] font-semibold text-primary border-b pb-2 border-gray-200">
+                    <div>时间</div>
+                    <div>题目</div>
+                    <div>讲者</div>
+                    <div>主持人</div>
+                </div>
+                
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>13:30-14:00</div>
+                    <div>黑龙江省医学会卒中专业委员会换届会议</div>
+                    <div>
+                    <p class="mb-2">
+                        <a href="speakers.html#zzl" class="text-blue-600 hover:underline">张忠玲</a> 教授<br>
+                        <span class="text-sm text-gray-600">哈尔滨医科大学附属第一医院</span>
+                    </p>
+                    </div>
+                    
+                    <div>杨珊珊 教授<br>
+                    <span class="text-sm text-gray-600">哈尔滨医科大学附属第一医院</span>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>14:00-14:30</div>
+                    <div>神经系统疾病质控中心神经内科亚专业质控专家组成立大会</div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#shz" class="text-blue-600 hover:underline">史怀璋</a> 教授<br>
+                            <span class="text-sm text-gray-600">哈尔滨医科大学附属第一医院</span>
+                        </p>
+                        <p class="mb-2">
+                            <a href="speakers.html#zzl" class="text-blue-600 hover:underline">张忠玲</a> 教授<br>
+                            <span class="text-sm text-gray-600">哈尔滨医科大学附属第一医院</span>
+                        </p>
+                    </div>
+                    <div>杨珊珊 教授<br>
+                    <span class="text-sm text-gray-600">哈尔滨医科大学附属第一医院</span>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>15:00 - 17:00</div>
+                    <div>急性缺血性卒中前沿诊疗策略专家咨询会</div>
+                    <div>国内及省内卒中领域专家</div>
+                    <div>张忠玲 教授<br>
+                    <span class="text-sm text-gray-600">哈尔滨医科大学附属第一医院</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="panel-719" class="collapsible-panel hidden bg-white shadow-md p-6 rounded-xl mb-6 w-full">
+                <h4 class="text-xl font-bold mb-4">19号上午主会场（三楼大宴会厅）</h4>
+                
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] font-semibold text-primary border-b pb-2 border-gray-200">
+                    <div>时间</div>
+                    <div>题目</div>
+                    <div>讲者</div>
+                    <div>主持人</div>
+                </div>
+                
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>08:00 - 08:30</div>
+                    <div>颈动脉慢性闭塞开通策略</div>
+                    <div>
+                    <p class="mb-2">
+                        <a href="speakers.html#lx" class="text-blue-600 hover:underline">骆翔</a> 教授<br>
+                        <span class="text-sm text-gray-600">华中科技大学同济医学院附属同济医院</span>
+                    </p>
+                    </div>
+                    <div>迟立军 教授<br>
+                    <span class="text-sm text-gray-600">哈尔滨医科大学附属第一医院</span>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>08:30 - 09:00</div>
+                    <div>2025年龙江卒中大会开幕式</div>
+                    <div>张忠玲教授致欢迎辞、<br>
+                    哈尔滨医科大学校领导致辞、<br>
+                    哈医大一院领导致辞、<br>
+                    黑龙江省医学会及医师协会领导致辞</div>
+                    <div>杨珊珊 教授<br>
+                    <span class="text-sm text-gray-600">哈尔滨医科大学附属第一医院</span>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>09:00-09:25</div>
+                    <div>微循环障碍机制研究</div>
+                    <div>
+                    <p class="mb-2">
+                        <a href="speakers.html#wyl" class="text-blue-600 hover:underline">王伊龙</a> 教授<br>
+                        <span class="text-sm text-gray-600">首都医科大学附属北京天坛医院</span>
+                    </p>
+                    </div>
+                    <div>王丽华 教授<br>
+                    <span class="text-sm text-gray-600">哈尔滨医科大学附属第一医院</span>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>09:25-09:50</div>
+                    <div>急性缺血性脑卒中无效再通治疗进展及策略</div>
+                    <div>
+                    <p class="mb-2">
+                        <a href="speakers.html#wyl" class="text-blue-600 hover:underline">杨清武</a> 教授<br>
+                        <span class="text-sm text-gray-600">陆军军医大学第二附属医院</span>
+                    </p>
+                    </div>
+                    <div>张黎明 教授<br>
+                    <span class="text-sm text-gray-600">哈尔滨医科大学附属第一医院</span>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>09:50 - 10:15</div>
+                    <div>后循环卒中超时间窗静脉溶栓研究进展</div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#楼敏" class="text-blue-600 hover:underline">楼敏</a> 教授<br>
+                            <span class="text-sm text-gray-600">浙江大学医学院附属第二医院</span>
+                        </p>
+                    </div>
+                    <div>李国忠 教授<br>
+                        <span class="text-sm text-gray-600">黑龙江省医院</span>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>10:15-10:40</div>
+                    <div>脑出血研究之思考和探索</div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#zl" class="text-blue-600 hover:underline">张乐</a> 教授<br>
+                            <span class="text-sm text-gray-600">中南大学湘雅医院</span>
+                        </p>
+                    </div>
+                    <div>张忠玲 教授<br>
+                        <span class="text-sm text-gray-600">哈尔滨医科大学附属第一医院</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>10:40 - 11:05</div>
+                    <div>脑出血的免疫学研究</div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#liuq" class="text-blue-600 hover:underline">刘强</a> 教授<br>
+                            <span class="text-sm text-gray-600">天津医科大学总医院</span>
+                        </p>
+                    </div>
+                    <div>吴江 教授<br>
+                        <span class="text-sm text-gray-600">哈尔滨医科大学附属第四医院</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>11:05-11:30</div>
+                    <div>脑小血管病的诊治新进展</div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#yjl" class="text-blue-600 hover:underline">巫嘉陵</a> 教授<br>
+                            <span class="text-sm text-gray-600">天津市环湖医院</span>
+                        </p>
+                    </div>
+                    <div>朱雨岚 教授<br>
+                        <span class="text-sm text-gray-600">哈尔滨医科大学附属第二医院</span>
+                    </div>
+                </div>
+                
+                <!--19号下午 -->
+                <h4 class="text-xl font-bold my-4">19号下午分会场1（三楼宴会厅1）</h4>
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    
+                <div>13:00-13:25</div>
+                <div>偏头痛与卒中：已知与未知</div>
+                <div>
+                    <p class="mb-2">
+                        <a href="speakers.html#gwp" class="text-blue-600 hover:underline">谷文萍</a> 教授<br>
+                        <span class="text-sm text-gray-600">中南大学湘雅医院</span>
+                    </p>
+                </div>
+                <div>张丽梅</div>
+            </div>
+            
+            <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                <div>13:25-13:50</div>
+                <div>ASCVD防治——目前的认知、困境与出路</div>
+                <div>
+                    <p class="mb-2">
+                        <a href="speakers.html#sxb" class="text-blue-600 hover:underline">史旭波</a> 教授<br>
+                        <span class="text-sm text-gray-600">北京同仁医院</span>
+                    </p>
+                </div>
+                <div>张丽梅</div>
+            </div>
+            
+            <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                <div>13:50-14:15</div>
+                <div>再灌注时代脑细胞保护治疗的循证实践</div>
+                <div>
+                    <p class="mb-2">
+                        <a href="speakers.html#twy" class="text-blue-600 hover:underline">滕伟禹</a> 教授<br>
+                        <span class="text-sm text-gray-600">中国医科大学附属第一医院</span>
+                    </p>
+                </div>
+                <div>张卓伯</div>
+            </div>
+            
+            <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                <div>14:15- 4:40</div>
+                <div>晕厥的诊断和治疗</div>
+                <div>
+                    <p class="mb-2">
+                        <a href="speakers.html#zrl" class="text-blue-600 hover:underline">李伟荣</a> 教授<br>
+                        <span class="text-sm text-gray-600">山西省心血管病医院</span>
+                    </p>
+                </div>
+                <div>张卓伯<br>
+                    <span class="text-sm text-gray-600"></span>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                <div>14:40 - 15:05</div>
+                <div>耳垂Frank征与缺血性脑卒中</div>
+                <div>
+                    <p class="mb-2">
+                        <a href="speakers.html#cyj" class="text-blue-600 hover:underline">曹勇军</a> 教授<br>
+                        <span class="text-sm text-gray-600">苏州大学附属第二医院</span>
+                    </p>
+                </div>
+                <div>许丽华<br>
+                    <span class="text-sm text-gray-600">佳木斯市中心医院</span>
+                </div>
+            </div>
+            <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                <div>15:05 - 15:30</div>
+                <div>临床试验多重比较问题的考虑与处理</div>
+                <div>
+                    <p class="mb-2">
+                        <a href="speakers.html#wax" class="text-blue-600 hover:underline">王安心</a> 教授<br>
+                        <span class="text-sm text-gray-600">首都医科大学附属北京天坛医院</span>
+                    </p>
+                </div>
+                <div>许丽华<br>
+                    <span class="text-sm text-gray-600">佳木斯市中心医院</span>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                <div>15:30-15:55</div>
+                <div>规范引领，实践有方——从指南共识更新看缺血性卒中患者优化血脂管理策略</div>
+                <div>
+                    <p class="mb-2">
+                        <a href="speakers.html#zd" class="text-blue-600 hover:underline">钟镝</a> 教授<br>
+                        <span class="text-sm text-gray-600">哈尔滨医科大学附属第一医院</span>
+                    </p>
+                </div>
+                <div>孙程贺</div>
+            </div>
+            
+            <div class="grid grid-cols-[1fr_4fr_1fr] border-b py-2 border-gray-100">
+                <div>15:55 - 16:20</div>
+                <div>提问互动环节</div>
+                <div>孙程贺</div>
+            </div>
+                
+                <h4 class="text-xl font-bold my-4">19号下午分会场2（三楼宴会厅2）</h4>
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] font-semibold text-primary border-b pb-2 border-gray-200">
+                    <div>时间</div>
+                    <div>题目</div>
+                    <div>讲者</div>
+                    <div>主持人</div>
+                </div>
+                
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>13:00-13:25</div>
+                    <div>缺血性卒中的血栓形成及转归</div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#hla" class="text-blue-600 hover:underline">黄立安</a> 教授<br>
+                            <span class="text-sm text-gray-600">暨南大学附属第一医院</span>
+                        </p>
+                    </div>
+                    <div>苏志强</div>
+                </div>
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>13:25-13:50</div>
+                    <div>糖代谢异常对于卒中预后的影响和治疗策略——基于高质量研究的循证之旅</div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#mdh" class="text-blue-600 hover:underline">米东华</a> 教授<br>
+                            <span class="text-sm text-gray-600">首都医科大学附属北京天坛医院</span>
+                        </p>
+                    </div>
+                    <div>苏志强</div>
+                </div>
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>13:50-14:15</div>
+                    <div>安全开展颅内动脉狭窄介入治疗</div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#glb" class="text-blue-600 hover:underline">高连波</a> 教授<br>
+                            <span class="text-sm text-gray-600">中国医科大学附属第四医院</span>
+                        </p>
+                    </div>
+                    <div>金玉玲<br>
+                        <span class="text-sm text-gray-600">佳木斯大学附属第一医院</span>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>14:15-14:40</div>
+                    <div>眼-耳-脑血管病的诊断</div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#xj" class="text-blue-600 hover:underline">夏健</a> 教授<br>
+                            <span class="text-sm text-gray-600">中南大学湘雅医院</span>
+                        </p>
+                    </div>
+                    <div>金玉玲<br>
+                        <span class="text-sm text-gray-600">佳木斯大学附属第一医院</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>14:40-15:05</div>
+                    <div>急性缺血性卒中取栓治疗的影像学选择</div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#sy" class="text-blue-600 hover:underline">隋轶</a> 教授<br>
+                            <span class="text-sm text-gray-600">中国医科大学沈阳市第四人民医院</span>
+                        </p>
+                    </div>
+                    <div>刘佩芳<br>
+                        <span class="text-sm text-gray-600">哈尔滨医科大学附属第二医院</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>15:05-15:30</div>
+                    <div>血小板聚集功能指导脑梗死精准抗血小板治疗</div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#yj" class="text-blue-600 hover:underline">杨杰</a> 教授<br>
+                            <span class="text-sm text-gray-600">四川省人民医院</span>
+                        </p>
+                    </div>
+                    <div>刘佩芳<br>
+                        <span class="text-sm text-gray-600">哈尔滨医科大学附属第二医院</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>15:30-15:55</div>
+                    <div>移动卒中单元的研究进展</div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#jj" class="text-blue-600 hover:underline">荆京</a> 教授<br>
+                            <span class="text-sm text-gray-600">首都医科大学附属北京天坛医院</span>
+                        </p>
+                    </div>
+                    <div>王海军</div>
+                </div>
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>15:55-16:20</div>
+                    <div>从药物镇静到自然睡眠——睡眠治疗新进展</div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#wz" class="text-blue-600 hover:underline">王赞</a> 教授<br>
+                            <span class="text-sm text-gray-600">吉林大学第一医院</span>
+                        </p>
+                    </div>
+                    <div>王海军</div>
+                </div>
+                
+                <h4 class="text-xl font-bold my-4">19号下午分会场3（三楼宴会厅3）</h4>
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] font-semibold text-primary border-b pb-2 border-gray-200">
+                    <div>时间</div>
+                    <div>题目</div>
+                    <div>讲者</div>
+                    <div>主持人</div>
+                </div>
+                
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>13:00-13:25</div>
+                    <div>大血管闭塞性脑梗死机械取栓后的血压管理</div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#wb" class="text-blue-600 hover:underline">吴波</a> 教授<br>
+                            <span class="text-sm text-gray-600">四川大学华西医院</span>
+                        </p>
+                    </div>
+                    <div>潘永惠<br>
+                        <span class="text-sm text-gray-600">哈尔滨医科大学附属第一医院</span>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>13:25-13:50</div>
+                    <div>再灌注治疗的时间窗探索及展望</div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#sb" class="text-blue-600 hover:underline">宋波</a> 教授<br>
+                            <span class="text-sm text-gray-600">郑州大学第一附属医院</span>
+                        </p>
+                    </div>
+                    <div>潘永惠 教授<br>
+                        <span class="text-sm text-gray-600">哈尔滨医科大学附属第一医院</span>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>13:50-14:15</div>
+                    <div>与智者同行：晚时间窗溶栓布局</div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#xyy" class="text-blue-600 hover:underline">熊云云</a> 教授<br>
+                            <span class="text-sm text-gray-600">首都医科大学附属北京天坛医院</span>
+                        </p>
+                    </div>
+                    <div>宫旭海 教授<br>
+                        <span class="text-sm text-gray-600">大庆油田总医院</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>14:15-14:40</div>
+                    <div>脑小血管病影像学和治疗进展</div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#jh" class="text-blue-600 hover:underline">靳航</a> 教授<br>
+                            <span class="text-sm text-gray-600">吉林大学第一医院</span>
+                        </p>
+                    </div>
+                    <div>宫旭海 教授<br>
+                        <span class="text-sm text-gray-600">大庆油田总医院</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>14:40-15:05</div>
+                    <div>卒中后认知障碍的规范化诊疗</div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#yjie" class="text-blue-600 hover:underline">尹洁</a> 教授<br>
+                            <span class="text-sm text-gray-600">牡丹江医科大学附属红旗医院</span>
+                        </p>
+                    </div>
+                    <div>张荟雪 教授</div>
+                </div>
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>15:05-15:30</div>
+                    <div>CGRP-偏头痛治疗新靶点及临床应用探索</div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#zdx" class="text-blue-600 hover:underline">赵冬雪</a> 教授<br>
+                            <span class="text-sm text-gray-600">中国医科大学附属盛京医院</span>
+                        </p>
+                    </div>
+                    <div>张荟雪 教授</div>
+                </div>
+                
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>15:30-15:55</div>
+                    <div>缺血性卒中研究新进展2025</div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#mh" class="text-blue-600 hover:underline">孟珩</a> 教授<br>
+                            <span class="text-sm text-gray-600">暨南大学附属第一医院</span>
+                        </p>
+                    </div>
+                    <div>赵维纳 教授<br>
+                        <span class="text-sm text-gray-600">牡丹江医科大学附属红旗医院</span>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-[1fr_4fr_1fr] border-b py-2 border-gray-100">
+                    <div>15:55-16:20</div>
+                    <div>提问互动环节</div>
+                    <div>赵维纳 教授<br>
+                        <span class="text-sm text-gray-600">牡丹江医科大学附属红旗医院</span>
+                    </div>
+                </div>
+                
+                <h4 class="text-xl font-bold my-4">19号下午分会场4（三楼哈尔滨厅）</h4>
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] font-semibold text-primary border-b pb-2 border-gray-200">
+                    <div>时间</div>
+                    <div>题目</div>
+                    <div>讲者</div>
+                    <div>主持人</div>
+                </div>
+                
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>13:00-13:25</div>
+                    <div>脑健康社区队列的构建与研究意义</div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#sqj" class="text-blue-600 hover:underline">孙钦建</a> 教授<br>
+                            <span class="text-sm text-gray-600">山东省立医院</span>
+                        </p>
+                    </div>
+                    <div>姚丽芬 教授<br>
+                        <span class="text-sm text-gray-600">哈尔滨医科大学附属第一医院</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>13:25-13:50</div>
+                    <div>口腔-肠道-脑轴：微生物组学在缺血性脑血管病中的作用</div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#yjia" class="text-blue-600 hover:underline">尹恝</a> 教授<br>
+                            <span class="text-sm text-gray-600">南方医科大学南方医院</span>
+                        </p>
+                    </div>
+                    <div>姚丽芬 教授<br>
+                        <span class="text-sm text-gray-600">哈尔滨医科大学附属第一医院</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>13:50-14:15</div>
+                    <div>中等血管闭塞AIS血管内治疗研究现状</div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#ngz" class="text-blue-600 hover:underline">南光贤</a> 教授<br>
+                            <span class="text-sm text-gray-600">吉林大学中日联谊医院</span>
+                        </p>
+                    </div>
+                    <div>岳卫东 教授<br>
+                        <span class="text-sm text-gray-600">哈尔滨医科大学附属第二医院</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>14:15-14:40</div>
+                    <div>从code ICH出发浅谈脑卒中一体化诊治</div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#lq" class="text-blue-600 hover:underline">李琦</a> 教授<br>
+                            <span class="text-sm text-gray-600">安徽医科大学第二附属医院</span>
+                        </p>
+                    </div>
+                    <div>岳卫东 教授<br>
+                        <span class="text-sm text-gray-600">哈尔滨医科大学附属第二医院</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>14:40-15:05</div>
+                    <div>高血压相关认知功能损伤的机制及干预策略</div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#zcs" class="text-blue-600 hover:underline">赵传胜</a> 教授<br>
+                            <span class="text-sm text-gray-600">中国医科大学附属第一医院</span>
+                        </p>
+                    </div>
+                    <div>王明华 教授<br>
+                        <span class="text-sm text-gray-600">大庆市人民医院</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>15:05-15:30</div>
+                    <div>神经免疫性疾病发病机制及治疗策略</div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#tcy" class="text-blue-600 hover:underline">汤常永</a> 教授<br>
+                            <span class="text-sm text-gray-600">中山大学附属第三医院</span>
+                        </p>
+                    </div>
+                    <div>王明华 教授<br>
+                        <span class="text-sm text-gray-600">大庆市人民医院</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>15:30-15:55</div>
+                    <div>卒中患者规范化全程营养管理护理实践</div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#zli" class="text-blue-600 hover:underline">张丽</a> 教授<br>
+                            <span class="text-sm text-gray-600">哈尔滨医科大学附属第一医院</span>
+                        </p>
+                    </div>
+                    <div>郑姣琳 教授<br>
+                        <span class="text-sm text-gray-600">哈尔滨医科大学附属第二医院</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-[1fr_4fr_1fr] border-b py-2 border-gray-100">
+                    <div>15:55-16:20</div>
+                    <div>提问互动环节</div>
+                    <div>郑姣琳 教授<br>
+                        <span class="text-sm text-gray-600">哈尔滨医科大学附属第二医院</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-[1fr] border-b py-2 border-gray-100">
+                    <div>闭幕式</div>
+                </div>
+                
+            </div>
+
+            <div id="panel-720" class="collapsible-panel hidden bg-white shadow-md p-6 rounded-xl mb-6 w-full">
+                <h4 class="text-xl font-bold mb-4">20号上午会场（腾讯会议平台）</h4>
+                
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] font-semibold text-primary border-b pb-2 border-gray-200">
+                    <div>时间</div>
+                    <div>题目</div>
+                    <div>讲者</div>
+                    <div>主持人</div>
+                </div>
+                
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>08:00-08:30</div>
+                    <div>2025年龙江卒中大会开幕式</div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#zzl" class="text-blue-600 hover:underline">张忠玲</a> 教授<br>
+                            <span class="text-sm text-gray-600">哈尔滨医科大学附属第一医院</span>
+                        </p>
+                    </div>
+                    <div>杨珊珊 教授<br>
+                        <span class="text-sm text-gray-600">哈尔滨医科大学附属第一医院</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>08:30-09:00</div>
+                    <div>双联抗血小板治疗的临床规范</div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#zjr" class="text-blue-600 hover:underline">曾进胜</a> 教授<br>
+                            <span class="text-sm text-gray-600">中山大学附属第一医院</span>
+                        </p>
+                    </div>
+                    <div>汤颖<br>
+                        <span class="text-sm text-gray-600">哈尔滨医科大学附属第一医院</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>09:00-09:30</div>
+                    <div>介入神经病学研究与临床</div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#lxf" class="text-blue-600 hover:underline">刘新峰</a> 教授<br>
+                            <span class="text-sm text-gray-600">中国科学技术大学附属第一医院</span>
+                        </p>
+                    </div>
+                    <div>汤颖<br>
+                        <span class="text-sm text-gray-600">哈尔滨医科大学附属第一医院</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>09:30-10:00</div>
+                    <div>超高危缺血性卒中患者血脂管理新选择</div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#gzn" class="text-blue-600 hover:underline">郭珍妮</a> 教授<br>
+                            <span class="text-sm text-gray-600">吉林大学第一医院</span>
+                        </p>
+                    </div>
+                    <div>赵虹</div>
+                </div>
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>10:00-10:30</div>
+                    <div>脑小血管病最新研究进展</div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#zqz" class="text-blue-600 hover:underline">陆正齐</a> 教授<br>
+                            <span class="text-sm text-gray-600">中山大学附属第三医院</span>
+                        </p>
+                    </div>
+                    <div>赵虹</div>
+                </div>
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>10:30-11:00</div>
+                    <div>急性脑卒中救治新策略的建立及应用</div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#zwj" class="text-blue-600 hover:underline">资文杰</a> 教授<br>
+                            <span class="text-sm text-gray-600">陆军军医大学第二附属医院</span>
+                        </p>
+                    </div>
+                    <div>王薇</div>
+                </div>
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>11:00-11:30</div>
+                    <div>巴曲酶专题</div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#yss" class="text-blue-600 hover:underline">杨珊珊</a> 教授<br>
+                            <span class="text-sm text-gray-600">哈尔滨医科大学附属第一医院</span>
+                        </p>
+                    </div>
+                    <div>王薇</div>
+                </div>
+                
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                  <div class="col-span-4 text-center text-gray-600 font-medium">午休</div>
+                </div>
+
+                
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>13:00-13:30</div>
+                    <div></div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#mqf" class="text-blue-600 hover:underline">马青峰</a> 教授<br>
+                            <span class="text-sm text-gray-600"></span>
+                        </p>
+                    </div>
+                    <div>姜</div>
+                </div>
+                
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>13:30-14:00</div>
+                    <div></div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#hb" class="text-blue-600 hover:underline">胡波</a> 教授<br>
+                            <span class="text-sm text-gray-600"></span>
+                        </p>
+                    </div>
+                    <div>姜</div>
+                </div>
+                
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>14:00-14:30</div>
+                    <div>再灌注治疗神经保护相关研究</div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#yy" class="text-blue-600 hover:underline">杨弋</a> 教授<br>
+                            <span class="text-sm text-gray-600">吉林大学第一医院</span>
+                        </p>
+                    </div>
+                    <div>李磊</div>
+                </div>
+                
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>14:30-15:00</div>
+                    <div>再灌注治疗无效再通诊治</div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#lzj" class="text-blue-600 hover:underline">刘尊敬</a> 教授<br>
+                            <span class="text-sm text-gray-600">北京大学人民医院</span>
+                        </p>
+                    </div>
+                    <div>李磊</div>
+                </div>
+                
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>15:00-15:30</div>
+                    <div>血管内治疗颅内动脉硬化病变的这些年</div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#ljw" class="text-blue-600 hover:underline">李敬伟</a> 教授<br>
+                            <span class="text-sm text-gray-600">南京大学医学院附属苏州医院</span>
+                        </p>
+                    </div>
+                    <div></div>
+                </div>
+                
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                    <div>15:30-16:00</div>
+                    <div></div>
+                    <div>
+                        <p class="mb-2">
+                            <a href="speakers.html#hw" class="text-blue-600 hover:underline">胡伟</a> 教授<br>
+                            <span class="text-sm text-gray-600">安徽省立医院</span>
+                        </p>
+                    </div>
+                    <div></div>
+                </div>
+                
+                <div class="grid grid-cols-[1fr_3fr_1fr_1fr] border-b py-2 border-gray-100">
+                  <div class="col-span-4 text-center text-gray-600 font-medium">闭幕式</div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <footer class="fixed bottom-0 left-0 w-full z-50 bg-gradient-to-t from-red-700 via-red-600 to-red-500 shadow-2xl rounded-t-xl">
+  <div class="w-full px-4 py-3 flex justify-around items-center text-center text-sm md:text-base font-semibold text-yellow-100">
+    
+    <a href="index.html" class="flex flex-col items-center justify-center gap-1 hover:text-yellow-300 transition-colors duration-200">
+      <i class="fa fa-home text-lg md:text-xl"></i>
+      首页
+    </a>
+
+    <a href="details.html" class="flex flex-col items-center justify-center gap-1 hover:text-yellow-300 transition-colors duration-200">
+      <i class="fa fa-calendar text-lg md:text-xl"></i>
+      会议详情
+    </a>
+
+    <a href="speakers.html" class="flex flex-col items-center justify-center gap-1 hover:text-yellow-300 transition-colors duration-200">
+      <i class="fa fa-user text-lg md:text-xl"></i>
+      讲者简介
+    </a>
+
+    <a href="photo.html"
+       class="flex flex-col items-center justify-center gap-1 hover:text-yellow-300 transition-colors duration-200">
+      <i class="fa fa-camera text-lg md:text-xl"></i>
+      照片直播
+    </a>
+
+  </div>
+</footer>
+
+    <script>
+        //JavaScript 折叠逻辑与按钮状态切换
+        function togglePanel1(panelId) {
+            // 获取所有按钮的父级div
+            const allButtonDivs = document.querySelectorAll('.card-hover');
+            // 先将所有按钮的背景重置为白色
+            allButtonDivs.forEach(div => {
+                div.classList.remove('bg-blue-100'); // 移除激活状态的灰色背景
+                div.classList.add('bg-white');      // 添加默认状态的白色背景
+            });
+
+            // 遍历所有可折叠面板
+            document.querySelectorAll('.collapsible-panel').forEach(panel => {
+                if (panel.id === panelId) {
+                    // 切换当前点击的面板的显示状态
+                    panel.classList.toggle('hidden');
+
+                    // 如果面板现在是可见的（即被打开）
+                    if (!panel.classList.contains('hidden')) {
+                        // 找到控制这个面板的按钮
+                        const activeButton = document.querySelector(`button[onclick="togglePanel1('${panelId}')"]`);
+                        if (activeButton) {
+                            // 获取按钮的父级div并改变其背景颜色为灰色
+                            const parentDiv = activeButton.parentElement;
+                            parentDiv.classList.remove('bg-white');
+                            parentDiv.classList.add('bg-blue-100');
+                        }
+                    }
+                } else {
+                    // 隐藏所有其他的面板
+                    panel.classList.add('hidden');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

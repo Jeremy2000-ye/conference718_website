@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>欢迎致辞</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- 直接在 HTML 中配置 Tailwind -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {},
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+        @layer utilities {
+            .indent-cn {
+                text-indent: 2em;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed bg-cover bg-center bg-no-repeat"
+      style="background-image: url('./images/background1.png');">
+    
+    <!-- 顶部横幅图片 -->
+    <div class="w-full overflow-hidden">
+        <!-- 使用relative容器确保图片能超出父容器边缘 -->
+        <div class="relative w-full">
+            <img src="./images/banner2.png" alt="大会横幅" 
+                 class="w-full min-w-full h-[clamp(120px,30vw,300px)] object-cover"
+                 style="margin-left: calc(-50vw + 50%); width: 100vw;">
+        </div>
+    </div>
+
+  <!-- 外层包裹增加上下留白 -->
+  <div class="pt-20 pb-40">  
+    <section class="py-12 px-4 max-w-4xl mx-auto bg-white backdrop-blur rounded-lg shadow-md">
+      <h1 class="text-3xl md:text-4xl font-bold text-center text-black mb-8">欢迎致辞</h1>
+
+      <div class="text-lg md:text-xl space-y-6">
+        <p>尊敬的各位嘉宾、专家学者、各位同仁：</p>
+        <p class="indent-cn">
+          值此春暖花开、万物复苏的美好时节，我们怀着无比喜悦与热切期盼，诚邀海内外神经内科同仁于2025年7月18日~7月20日共聚东方莫斯科--哈尔滨，共襄2025年龙江卒中大会暨黑龙江省医学会卒中专业委员会/黑龙江省医师协会脑小血管病专业委员会学术会议的隆重召开。本次会议由黑龙江省医学会、黑龙江省医疗质量控制中心和黑龙江省医师协会主办，哈尔滨医科大学附属第一医院承办。在此，谨向各位同仁的积极参与和支持致以最诚挚的欢迎和衷心的感谢！
+        </p>
+        <p class="indent-cn">
+          会议以“创新·融合·发展”为主题，不仅是展示学术成果的重要平台，更是加强区域合作、促进经验共享的良好契机。来自不同领域的专家、学者、临床医生和基层医疗工作者，将在此汇聚交流、分享成果、共同推动卒中及相关交叉学科的发展。各类专题讲座、案例研讨及前沿探讨，将覆盖卒中防治的多个环节，助力基层诊疗能力提升，惠及更多患者，充分彰显了医学工作者“健康所系，性命相托”的崇高使命。
+        </p>
+        <p class="indent-cn">
+          期待大家在此次会议中广泛交流、深入合作，共襄一场开放包容、启迪思维的学术盛宴，推动卒中防治体系更加规范化、精准化，共同守护患者的生命尊严与健康权益。
+        </p>
+        <p class="indent-cn">
+          最后，衷心祝愿本次会议圆满成功！愿各位在哈尔滨的工作顺利、交流愉快、收获丰硕！愿我们勠力同心，为健康中国建设贡献智慧力量！
+        </p>
+      </div>
+
+      <!-- 签名 -->
+      <div class="mt-12 flex justify-end">
+        <div class="text-right">
+          <img src="./images/sign_zzl.png" alt="签名" class="h-20 md:h-24 mt-2 object-contain inline-block">
+          <p class="text-lg font-semibold">2025年7月18日</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- 底部导航栏 -->
+  <footer class="fixed bottom-0 left-0 w-full z-50 bg-gradient-to-t from-red-700 via-red-600 to-red-500 shadow-2xl rounded-t-xl">
+    <div class="w-full px-4 py-3 flex justify-around items-center text-center text-sm md:text-base font-semibold text-yellow-100">
+      <a href="index.html" class="flex flex-col items-center justify-center gap-1 hover:text-yellow-300 transition-colors duration-200">
+        <i class="fa fa-home text-lg md:text-xl"></i> 首页
+      </a>
+      <a href="details.html" class="flex flex-col items-center justify-center gap-1 hover:text-yellow-300 transition-colors duration-200">
+        <i class="fa fa-calendar text-lg md:text-xl"></i> 会议详情
+      </a>
+      <a href="speakers.html" class="flex flex-col items-center justify-center gap-1 hover:text-yellow-300 transition-colors duration-200">
+        <i class="fa fa-user text-lg md:text-xl"></i> 讲者简介
+      </a>
+      <a href="photo.html"
+         class="flex flex-col items-center justify-center gap-1 hover:text-yellow-300 transition-colors duration-200">
+        <i class="fa fa-camera text-lg md:text-xl"></i> 照片直播
+      </a>
+    </div>
+  </footer>
+
+</body>
+
+</html>
