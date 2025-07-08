@@ -6,7 +6,6 @@
   <title>欢迎致辞</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <!-- 直接在 HTML 中配置 Tailwind -->
   <script>
     tailwind.config = {
       theme: {
@@ -27,20 +26,21 @@
     
     <!-- 顶部横幅图片 -->
     <div class="w-full overflow-hidden">
-        <!-- 使用relative容器确保图片能超出父容器边缘 -->
         <div class="relative w-full">
             <img src="./images/banner2.png" alt="大会横幅" 
-                 class="w-full min-w-full h-[clamp(120px,30vw,300px)] object-cover"
+                 class="w-full min-w-full h-[clamp(100px,25vw,250px)] object-cover"
                  style="margin-left: calc(-50vw + 50%); width: 100vw;">
         </div>
     </div>
 
-  <!-- 外层包裹增加上下留白 -->
-  <div class="pt-20 pb-40">  
-    <section class="py-12 px-4 max-w-4xl mx-auto bg-white backdrop-blur rounded-lg shadow-md">
-      <h1 class="text-3xl md:text-4xl font-bold text-center text-black mb-8">欢迎致辞</h1>
+  <!-- 外层包裹优化 -->
+  <div class="pt-12 pb-32 px-4 md:px-0">  
+    <section class="py-5 px-4 md:py-8 md:px-6 max-w-4xl mx-auto bg-white backdrop-blur rounded-lg shadow-md">
+      <!-- 标题进一步缩小 -->
+      <h1 class="text-xl md:text-2xl font-bold text-center text-black mb-5">欢迎致辞</h1>
 
-      <div class="text-lg md:text-xl space-y-6">
+      <!-- 正文字体进一步缩小 -->
+      <div class="text-sm md:text-base space-y-4 leading-relaxed">
         <p>尊敬的各位嘉宾、专家学者、各位同仁：</p>
         <p class="indent-cn">
           值此春暖花开、万物复苏的美好时节，我们怀着无比喜悦与热切期盼，诚邀海内外神经内科同仁于2025年7月18日~7月20日共聚东方莫斯科--哈尔滨，共襄2025年龙江卒中大会暨黑龙江省医学会卒中专业委员会/黑龙江省医师协会脑小血管病专业委员会学术会议的隆重召开。本次会议由黑龙江省医学会、黑龙江省医疗质量控制中心和黑龙江省医师协会主办，哈尔滨医科大学附属第一医院承办。在此，谨向各位同仁的积极参与和支持致以最诚挚的欢迎和衷心的感谢！
@@ -56,31 +56,31 @@
         </p>
       </div>
 
-      <!-- 签名 -->
-      <div class="mt-12 flex justify-end">
+      <!-- 签名区域同步缩小 -->
+      <div class="mt-8 flex justify-end">
         <div class="text-right">
-          <img src="./images/sign_zzl.png" alt="签名" class="h-20 md:h-24 mt-2 object-contain inline-block">
-          <p class="text-lg font-semibold">2025年7月18日</p>
+          <img src="./images/sign_zzl.png" alt="签名" class="h-14 md:h-18 mt-2 object-contain inline-block">
+          <p class="text-sm md:text-base font-semibold">2025年7月18日</p>
         </div>
       </div>
     </section>
   </div>
 
-  <!-- 底部导航栏 -->
+  <!-- 底部导航栏微调 -->
   <footer class="fixed bottom-0 left-0 w-full z-50 bg-gradient-to-t from-red-700 via-red-600 to-red-500 shadow-2xl rounded-t-xl">
-    <div class="w-full px-4 py-3 flex justify-around items-center text-center text-sm md:text-base font-semibold text-yellow-100">
+    <div class="w-full px-4 py-2 md:py-3 flex justify-around items-center text-center text-xs md:text-sm font-semibold text-yellow-100">
       <a href="index.html" class="flex flex-col items-center justify-center gap-1 hover:text-yellow-300 transition-colors duration-200">
-        <i class="fa fa-home text-lg md:text-xl"></i> 首页
+        <i class="fa fa-home text-base md:text-lg"></i> 首页
       </a>
       <a href="details.html" class="flex flex-col items-center justify-center gap-1 hover:text-yellow-300 transition-colors duration-200">
-        <i class="fa fa-calendar text-lg md:text-xl"></i> 会议详情
+        <i class="fa fa-calendar text-base md:text-lg"></i> 会议详情
       </a>
       <a href="speakers.html" class="flex flex-col items-center justify-center gap-1 hover:text-yellow-300 transition-colors duration-200">
-        <i class="fa fa-user text-lg md:text-xl"></i> 讲者简介
+        <i class="fa fa-user text-base md:text-lg"></i> 讲者简介
       </a>
       <a href="photo.html"
          class="flex flex-col items-center justify-center gap-1 hover:text-yellow-300 transition-colors duration-200">
-        <i class="fa fa-camera text-lg md:text-xl"></i> 照片直播
+        <i class="fa fa-camera text-base md:text-lg"></i> 照片直播
       </a>
     </div>
   </footer>

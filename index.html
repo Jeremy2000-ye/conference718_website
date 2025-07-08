@@ -42,29 +42,35 @@
             .bg-gradient-primary {
                 background: linear-gradient(135deg, #0f41b3 0%, #4f8ff7 100%);
             }
+            .text-nowrap-mobile {
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
         }
     </style>
 </head>
 <body class="bg-gray-50 text-black font-sans">
     <!-- 主横幅区域 -->
-    <section class="min-h-screen pt-8 md:pt-16 pb-16 md:pb-24 pb-16 md:pb-24 bg-cover bg-center bg-no-repeat text-white flex items-center justify-center"
+    <section class="min-h-screen pt-6 md:pt-12 pb-12 md:pb-20 bg-cover bg-center bg-no-repeat text-white flex items-center justify-center"
          style="background-image: url('./images/background1.png');">
   <div class="container mx-auto px-4 w-full">
-    <div class="flex flex-col items-center text-center gap-8 text-yellow-100">
+    <div class="flex flex-col items-center text-center gap-6 text-yellow-100">
       <!-- 标题区 -->
       <div class="w-full max-w-3xl">
-        <div class="flex items-center justify-center gap-3 mb-6 flex-wrap text-center">
-          <img src="./images/logo2.png" alt="logo" class="w-44 md:w-48 object-contain" />
-          <h2 class="text-[clamp(1rem,2vw,2rem)] font-bold leading-tight text-shadow text-yellow-100">
-            2025年龙江卒中大会暨黑龙江省医学会卒中专业委员会<br class="hidden md:block">
-            黑龙江省医师协会脑小血管病专业委员会学术会议
+        <div class="flex flex-col md:flex-row items-center justify-center gap-2 mb-4">
+          <img src="./images/logo2.png" alt="logo" class="w-32 md:w-40 object-contain mx-auto md:mx-0" />
+          <h2 class="text-[clamp(0.8rem,3.5vw,1.6rem)] font-bold leading-tight text-shadow text-yellow-100 text-center md:text-left">
+            2025年龙江卒中大会暨黑龙江省医学会卒中专业委员会
+            <span class="block md:inline"> 黑龙江省医师协会脑小血管病专业委员会学术会议</span>
           </h2>
         </div>
 
-        <p class="text-lg md:text-xl opacity-90 mb-6">
-          — 黑龙江 哈尔滨 2025年7月18日~7月20日 —
+        <p class="text-sm md:text-base opacity-90 mb-8">
+          ---黑龙江 哈尔滨 2025年7月18日~7月20日---
         </p>
-        <p class="text-lg md:text-xl opacity-90 mb-8">
+        
+        <p class="text-sm md:text-base opacity-90 mb-8">
           主办单位: 黑龙江省医学会 &nbsp;&nbsp; 黑龙江省医师协会<br>
           承办单位：哈尔滨医科大学附属第一医院<br>
           会议地点：哈尔滨富力万达嘉华酒店
@@ -73,65 +79,66 @@
 
       <!-- 导航模块 -->
       <div class="w-full">
-        <div class="text-center mb-6">
-          <h2 class="text-3xl md:text-4xl font-bold text-white mb-2">会议导航</h2>
-          <div class="w-20 h-1 bg-yellow-300 mx-auto rounded-full"></div>
+        <div class="text-center mb-4">
+          <h2 class="text-xl md:text-3xl font-bold text-white mb-2">会议导航</h2>
+          <div class="w-16 h-1 bg-yellow-300 mx-auto rounded-full"></div>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          <!-- 单个按钮模块 -->
+        <!-- 导航网格 - 更紧凑的布局 -->
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 max-w-5xl mx-auto">
+          <!-- 单个按钮模块 - 缩小尺寸 -->
           <a href="welcome.html"
-             class="bg-white/10 backdrop-blur-md border border-yellow-200 hover:border-yellow-400 hover:bg-white/20 rounded-2xl p-6 shadow-2xl hover:shadow-yellow-200 transition-all text-white text-center">
-            <div class="bg-yellow-200/20 p-4 rounded-full inline-block mb-4">
-              <i class="fa fa-smile-o text-yellow-300 text-3xl"></i>
+             class="bg-white/10 backdrop-blur-md border border-yellow-200 hover:border-yellow-400 hover:bg-white/20 rounded-xl p-3 md:p-4 shadow-lg hover:shadow-yellow-200/30 transition-all text-white text-center">
+            <div class="bg-yellow-200/20 p-2 md:p-3 rounded-full inline-block mb-2 md:mb-3">
+              <i class="fa fa-smile-o text-yellow-300 text-xl md:text-2xl"></i>
             </div>
-            <h3 class="text-xl font-bold mb-2">欢迎辞</h3>
-            <p class="opacity-90">欢迎致词及大会精神</p>
+            <h3 class="text-sm md:text-base font-bold mb-1 text-nowrap-mobile">欢迎辞</h3>
+            <p class="opacity-90 text-xs md:text-sm line-clamp-2">欢迎致词及大会精神</p>
           </a>
 
           <a href="details.html"
-             class="bg-white/10 backdrop-blur-md border border-yellow-200 hover:border-yellow-400 hover:bg-white/20 rounded-2xl p-6 shadow-2xl hover:shadow-yellow-200 transition-all text-white text-center">
-            <div class="bg-yellow-200/20 p-4 rounded-full inline-block mb-4">
-              <i class="fa fa-calendar text-yellow-300 text-3xl"></i>
+             class="bg-white/10 backdrop-blur-md border border-yellow-200 hover:border-yellow-400 hover:bg-white/20 rounded-xl p-3 md:p-4 shadow-lg hover:shadow-yellow-200/30 transition-all text-white text-center">
+            <div class="bg-yellow-200/20 p-2 md:p-3 rounded-full inline-block mb-2 md:mb-3">
+              <i class="fa fa-calendar text-yellow-300 text-xl md:text-2xl"></i>
             </div>
-            <h3 class="text-xl font-bold mb-2">会议详情</h3>
-            <p class="opacity-90">查看完整会议日程</p>
+            <h3 class="text-sm md:text-base font-bold mb-1 text-nowrap-mobile">会议详情</h3>
+            <p class="opacity-90 text-xs md:text-sm line-clamp-2">查看完整会议日程</p>
           </a>
 
           <a href="speakers.html"
-             class="bg-white/10 backdrop-blur-md border border-yellow-200 hover:border-yellow-400 hover:bg-white/20 rounded-2xl p-6 shadow-2xl hover:shadow-yellow-200 transition-all text-white text-center">
-            <div class="bg-yellow-200/20 p-4 rounded-full inline-block mb-4">
-              <i class="fa fa-user text-yellow-300 text-3xl"></i>
+             class="bg-white/10 backdrop-blur-md border border-yellow-200 hover:border-yellow-400 hover:bg-white/20 rounded-xl p-3 md:p-4 shadow-lg hover:shadow-yellow-200/30 transition-all text-white text-center">
+            <div class="bg-yellow-200/20 p-2 md:p-3 rounded-full inline-block mb-2 md:mb-3">
+              <i class="fa fa-user text-yellow-300 text-xl md:text-2xl"></i>
             </div>
-            <h3 class="text-xl font-bold mb-2">讲者简介</h3>
-            <p class="opacity-90">了解各位专家教授信息</p>
+            <h3 class="text-sm md:text-base font-bold mb-1 text-nowrap-mobile">讲者简介</h3>
+            <p class="opacity-90 text-xs md:text-sm line-clamp-2">了解各位专家教授信息</p>
           </a>
 
           <a href="location.html"
-             class="bg-white/10 backdrop-blur-md border border-yellow-200 hover:border-yellow-400 hover:bg-white/20 rounded-2xl p-6 shadow-2xl hover:shadow-yellow-200 transition-all text-white text-center">
-            <div class="bg-yellow-200/20 p-4 rounded-full inline-block mb-4">
-              <i class="fa fa-map-marker text-yellow-300 text-3xl"></i>
+             class="bg-white/10 backdrop-blur-md border border-yellow-200 hover:border-yellow-400 hover:bg-white/20 rounded-xl p-3 md:p-4 shadow-lg hover:shadow-yellow-200/30 transition-all text-white text-center">
+            <div class="bg-yellow-200/20 p-2 md:p-3 rounded-full inline-block mb-2 md:mb-3">
+              <i class="fa fa-map-marker text-yellow-300 text-xl md:text-2xl"></i>
             </div>
-            <h3 class="text-xl font-bold mb-2">会议地点</h3>
-            <p class="opacity-90">查看地图与交通</p>
+            <h3 class="text-sm md:text-base font-bold mb-1 text-nowrap-mobile">会议地点</h3>
+            <p class="opacity-90 text-xs md:text-sm line-clamp-2">查看地图与交通</p>
           </a>
 
           <a href="photo.html"
-             class="bg-white/10 backdrop-blur-md border border-yellow-200 hover:border-yellow-400 hover:bg-white/20 rounded-2xl p-6 shadow-2xl hover:shadow-yellow-200 transition-all text-white text-center">
-            <div class="bg-yellow-200/20 p-4 rounded-full inline-block mb-4">
-              <i class="fa fa-camera text-yellow-300 text-3xl"></i>
+             class="bg-white/10 backdrop-blur-md border border-yellow-200 hover:border-yellow-400 hover:bg-white/20 rounded-xl p-3 md:p-4 shadow-lg hover:shadow-yellow-200/30 transition-all text-white text-center">
+            <div class="bg-yellow-200/20 p-2 md:p-3 rounded-full inline-block mb-2 md:mb-3">
+              <i class="fa fa-camera text-yellow-300 text-xl md:text-2xl"></i>
             </div>
-            <h3 class="text-xl font-bold mb-2">照片直播</h3>
-            <p class="opacity-90">大会照片随时更新</p>
+            <h3 class="text-sm md:text-base font-bold mb-1 text-nowrap-mobile">照片直播</h3>
+            <p class="opacity-90 text-xs md:text-sm line-clamp-2">大会照片随时更新</p>
           </a>
 
           <a href="register.html"
-             class="bg-white/10 backdrop-blur-md border border-yellow-200 hover:border-yellow-400 hover:bg-white/20 rounded-2xl p-6 shadow-2xl hover:shadow-yellow-200 transition-all text-white text-center">
-            <div class="bg-yellow-200/20 p-4 rounded-full inline-block mb-4">
-              <i class="fa fa-pencil text-yellow-300 text-3xl"></i>
+             class="bg-white/10 backdrop-blur-md border border-yellow-200 hover:border-yellow-400 hover:bg-white/20 rounded-xl p-3 md:p-4 shadow-lg hover:shadow-yellow-200/30 transition-all text-white text-center">
+            <div class="bg-yellow-200/20 p-2 md:p-3 rounded-full inline-block mb-2 md:mb-3">
+              <i class="fa fa-pencil text-yellow-300 text-xl md:text-2xl"></i>
             </div>
-            <h3 class="text-xl font-bold mb-2">参会注册</h3>
-            <p class="opacity-90">点击填写注册信息</p>
+            <h3 class="text-sm md:text-base font-bold mb-1 text-nowrap-mobile">参会注册</h3>
+            <p class="opacity-90 text-xs md:text-sm line-clamp-2">点击填写注册信息</p>
           </a>
         </div>
       </div>
@@ -140,39 +147,36 @@
   </div>
 </section>
 
-
-
    <footer class="fixed bottom-0 left-0 w-full z-50 bg-gradient-to-t from-red-700 via-red-600 to-red-500 shadow-2xl rounded-t-xl">
-  <div class="w-full px-4 py-3 flex justify-around items-center text-center text-sm md:text-base font-semibold text-yellow-100">
+  <div class="w-full px-4 py-2 md:py-3 flex justify-around items-center text-center text-xs md:text-sm font-semibold text-yellow-100">
     
     <!-- 首页 -->
     <a href="index.html" class="flex flex-col items-center justify-center gap-1 hover:text-yellow-300 transition-colors duration-200">
-      <i class="fa fa-home text-lg md:text-xl"></i>
+      <i class="fa fa-home text-base md:text-lg"></i>
       首页
     </a>
 
     <!-- 会议详情 -->
     <a href="details.html" class="flex flex-col items-center justify-center gap-1 hover:text-yellow-300 transition-colors duration-200">
-      <i class="fa fa-calendar text-lg md:text-xl"></i>
+      <i class="fa fa-calendar text-base md:text-lg"></i>
       会议详情
     </a>
 
     <!-- 讲者简介 -->
     <a href="speakers.html" class="flex flex-col items-center justify-center gap-1 hover:text-yellow-300 transition-colors duration-200">
-      <i class="fa fa-user text-lg md:text-xl"></i>
+      <i class="fa fa-user text-base md:text-lg"></i>
       讲者简介
     </a>
 
     <!-- 照片直播 -->
     <a href="photo.html"
     class="flex flex-col items-center justify-center gap-1 hover:text-yellow-300 transition-colors duration-200">
-      <i class="fa fa-camera text-lg md:text-xl"></i>
+      <i class="fa fa-camera text-base md:text-lg"></i>
       照片直播
     </a>
 
   </div>
 </footer>
-
 
 </body>
 </html>
